@@ -1791,7 +1791,7 @@ a{
 .contcat-our-info__wrapper{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .contcat-our-info__item{
