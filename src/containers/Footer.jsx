@@ -4,7 +4,7 @@ import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-sv
 
 
 
-const Footer = ({type}) => {
+const Footer = ({type, name}) => {
 
     let footerClass = `footer `
     if(type === "dark"){
@@ -17,7 +17,7 @@ const Footer = ({type}) => {
                 <div className="container">
                     <div className="footer__wrapper">
                         <div className="footer__col">
-                            <div className="company-name">Agency</div>
+                            <div className="company-name">{name}</div>
                         </div>
                         <div className="footer__col">
                             <div className="name-li">Menu</div>

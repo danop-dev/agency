@@ -686,6 +686,10 @@ a{
     transition: all .2s linear;
 }
 
+.card-sv__item--min .card-img__box {
+    display: none;
+}
+
 .card-btn{
     font-size: 1rem;
     line-height: 2rem;
@@ -2015,6 +2019,7 @@ a{
 
 
 /* !!!### PERSONAL PAGE ###!!! */
+
 /* SERVICES SECTION */
 .services-pers__wrapper .item--size50 .card-sv__item{width: 50%;}
 
@@ -2087,6 +2092,10 @@ a{
     color: #EF6C57;
 }
 
+.service-second-section .card-btn--more::before{
+    content: none;
+}
+
 /* Work section PERSONAL */
 
 .work-head--btn{
@@ -2105,6 +2114,15 @@ a{
     outline: 1px solid rgba(255, 255, 255, 0.1);
     outline-offset: 15px;
     border-radius: 0px;
+}
+
+
+.works-section--webflow .--work-3-item > .work__card-item{
+    width: calc(33% - 16px);
+
+    outline: none;
+    outline-offset: 0;
+    border-radius: 6px;
 }
 
 .work__wrapper--large{
@@ -2370,3 +2388,237 @@ a{
 }
 
 /* !!!### PERSONAL PAGE ###!!! */
+
+
+/* !!!### Webflow PAGE ###!!! */
+
+/* MODIFY */
+
+.section--dark .h3-title,
+.section--dark .link{
+    color: #fff;
+
+    transition: all .2s linear;
+}
+
+.section--dark .link:hover{
+    color: #EF6D58;
+}
+
+.section--dark .card-sv__item{
+    background: transparent;
+    border: 1px solid #3A3C56;
+}
+
+.section--dark .card-sv__item--active,
+.section--dark .card-sv__item{
+    background: #fff;
+}
+
+.section--dark .card-sv__item--active .card-title,
+.section--dark .card-sv__item--active .card-p{
+    color: #391400;
+}
+
+.section--dark .card-sv__item--min {
+    background: transparent;
+}
+
+.section--dark .card-sv__item--min .card-title,
+.section--dark .card-sv__item--min .card-p{
+    color: #fff;
+}
+
+.section--dark .card-sv__item--min .card-img__box {
+    display: none;
+}
+
+.section--dark .line{
+    background: #3A3C56;
+}
+
+.section--dark .header__content{
+    color: #fff;
+}
+
+.section--dark.service-second-section .card-sv__item{
+    border: 1px solid #F3D1BF;
+}
+
+.section--minHeight60{
+    height: 550px;
+}
+
+
+.empty-section{
+    height: 450px;
+}
+
+.works-section--webflow{
+    padding-bottom: 100px;
+}
+
+.works-section--webflow .container{
+    margin-top: -400px;
+}
+
+.works-section--webflow .head-work{
+    margin-bottom: 50px;
+}
+
+.works-section--webflow .work-btn{
+    color: #391400 !important;
+    opacity: .64;
+}
+
+.works-section--webflow .work-btn:hover{
+    opacity: 1;
+}
+
+.contact-card--webflow .contact-card--personal{
+    margin-top: 65px;
+}
+
+.section--dark .head-work{
+    color: #fff;
+}
+
+.section--dark .testimonials__wrapper>.testimonials-card{
+    background-color: #fff;
+    box-shadow: 0px 32px 64px rgba(57, 20, 0, 0.04);
+}
+
+.section-empty-light{
+    height: 380px;
+    background-color: #FDF0E9;
+    margin-top: -350px;
+}
+
+.pricing-section--webflow .pricing-card:nth-child(2),
+.pricing-section--webflow .pricing-card .secundaryTransparent--BTN{
+    background-color: #fff;
+    transition: all .2s linear;
+}
+
+.pricing-section--webflow .pricing-card .secundaryTransparent--BTN:hover{
+    background-color: transparent;
+}
+
+.questions__section--webflow .accordion>.accordion__item--active{
+    background-color: #fff;
+}
+
+.section--dark .blog-card__info{
+    color: #fff;
+}
+
+.section--dark .blog-card__date{
+    color: rgba(255, 255, 255, 0.64);
+}
+
+.awards-section--webflow{
+    padding-bottom: 460px;
+}
+
+.blog__section--webflow .container{
+    margin-top: -400px;
+}
+
+.blog__section--webflow .h3-title{
+    color: #391400;
+
+}
+
+.newsletter__section--webfolow .newsletter__wrapper{
+    margin-bottom: 64px;
+}
+
+.section--dark .newsletter__email,
+.newsletter__section--webfolow.section--dark button{
+    background-color: #fff;
+    transition: all .2s linear;
+}
+
+.newsletter__section--webfolow.section--dark button:hover{
+    background-color: transparent;
+    color: #fff;
+}
+
+.banner--webflow {
+    height: 500px;
+    margin-bottom: 200px;
+}
+
+/* !!!### Webflow PAGE ###!!! */
+
+
+/* !!!### ABOUT PAGE ###!!! */
+.headre-min{
+    padding: 160px 0 65px 0;
+}
+
+.headre-min__wrapper{
+    text-align: center;
+    color: #fff;
+
+    max-width: 570px;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.headre-min__title{
+    font-size: 4.5rem;
+    line-height: 80px;
+    letter-spacing: -2px;
+    color: inherit;
+    margin-bottom: 24px;
+}
+
+.headre-min__paragraph{
+    font-size: 16px;
+    line-height: 32px;
+    color: inherit;
+    opacity: .64;
+}
+
+
+.about__wrapper{
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.about--about .header__paragraph:first-child{
+    margin-top: 50px;
+}
+
+.about--about .howWork__item{
+    width: 49%;
+}
+
+.about--about .video__item,
+.about--about .video-player{
+    width: 100%;
+}
+
+.about--about .gallery__wrapper>.gallery__item{
+    width: 49%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    height: 210px;
+}
+
+.section--aboutPage .card-sv__item--active{
+    background-color: #fff;
+}
+
+.questions__full-box{
+    max-width: 770px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.questions__full-box .howWork__item{
+    width: 100%;
+}
+
+/* !!!### ABOUT PAGE ###!!! */

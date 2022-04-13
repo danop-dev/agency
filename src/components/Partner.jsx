@@ -19,7 +19,6 @@ const Partner = () => {
             <img src={brand4} alt="Partner" />
             <img src={brand5} alt="Partner" />
         </div>
-
     </Fragment>
   )
 }

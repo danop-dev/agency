@@ -2,14 +2,14 @@ import React, {Fragment} from 'react';
 import Button from '../components/Button';
 
 
-const Navbar = () => {
+const Navbar = ({name}) => {
   return (
     <Fragment>
       <nav className='topNav' id='navBar'>
         <div className="container">
           <ul className="nav__section nav__section--main">
             <li className="nav__section-item">
-              <a href="/" className="logo">Agency</a>
+              <a href="/" className="logo">{name}</a>
             </li>
             <li className="nav__section-item  nav__section-item--large">
               <ul className="subnav">

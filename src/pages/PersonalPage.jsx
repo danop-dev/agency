@@ -57,7 +57,7 @@ import gallery6 from '../assets/img/personalPage/gallery/6.jpg';
 const PersonalPage = () => {
     return (
         <Fragment>
-            <NavBar />
+            <NavBar name={"Personal"}/>
             <section className="section header__section" >
                 <div className="container">
                     <Header
@@ -90,7 +90,7 @@ const PersonalPage = () => {
                                     imgPath={DesignIcon}
                                     title="Design"
                                     paragraph="Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house."
-                                    btn={false}
+                                    btn={true}
                                     btnVal="Learn More"
                                     style="line"
                                 />
@@ -100,7 +100,7 @@ const PersonalPage = () => {
                                     imgPath={DevelopIcon}
                                     title="Development"
                                     paragraph="Hire to outsource your digital marketing efforts, instead of handling in-house can provide your business."
-                                    btn={false}
+                                    btn={true}
                                     btnVal="Learn More"
                                     style="line"
                                 />
@@ -300,6 +300,7 @@ const PersonalPage = () => {
                     </div>
                 </div>
             </section>
+            
             <section className="section partner-section section--dark">
                 <div className="container">
                     <Partner />
@@ -418,7 +419,7 @@ const PersonalPage = () => {
                 </div>
             </section>
             
-            <Fooetr type="dark"/>
+            <Fooetr type="dark" name="Personal"/>
         </Fragment>
     )
 }

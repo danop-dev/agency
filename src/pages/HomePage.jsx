@@ -80,7 +80,7 @@ import bannerContactImg from '../assets/img/pic-banner.png';
 const HomePage = () => {
   return (
     <Fragment>
-      <NavBar />
+      <NavBar name={"Agency"} />
       <section className="section header__section" >
         <div className="container">
           <Header
@@ -181,7 +181,7 @@ const HomePage = () => {
             </div>
             <div className="features-second__item--large">
               <div className="features-second__wrapper-item">
-                <div className="card-sv__item">
+                <div className="card-sv__item card-sv__item--active">
                   <CardContentSimple
                     imgPath={ShapeIcon}
                     title="Professional"
@@ -189,7 +189,7 @@ const HomePage = () => {
                     btn={false}
                   />
                 </div>
-                <div className="card-sv__item">
+                <div className="card-sv__item card-sv__item--active">
                   <CardContentSimple
                     imgPath={AccesibilityIcon}
                     title="Accessibility"
@@ -653,7 +653,7 @@ const HomePage = () => {
           />
         </div>
       </section>
-      <Fooetr />
+      <Fooetr name={"Agency"}/>
     </Fragment>
   );
 };

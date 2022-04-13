@@ -1,17 +1,19 @@
 import React, { Fragment } from 'react';
 
+
 const CardContentSimple = ({
     imgPath,
     title,
     paragraph,
     btn,
     btnVal,
-    style
+    style,
 }
 ) => {
 
     let cardFlex = `card-img__box `;
     let cardTitle = `card-title `;
+    let activeWhite = ``
 
     if(style === "line"){
         cardFlex += `card-img__box--row`;
@@ -27,7 +29,7 @@ const CardContentSimple = ({
             </div>
             {style !== "line" ? <div className={cardTitle}>{title}</div> : null}
             <div className="card-p">{paragraph}</div>
-            {btn ? <a href="#" className="card-btn">{btnVal}</a> : <a href="#" className="card-btn--more">{btnVal}</a>}
+            {btn ? <a href="#" className="card-btn--more">{btnVal}</a> : null}
 
         </Fragment>
     )
