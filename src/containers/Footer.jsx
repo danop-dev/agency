@@ -4,10 +4,16 @@ import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-sv
 
 
 
-const Footer = () => {
+const Footer = ({type}) => {
+
+    let footerClass = `footer `
+    if(type === "dark"){
+        footerClass += `footer--dark`
+    }
+
     return (
         <Fragment>
-            <footer className="footer">
+            <footer className={footerClass}>
                 <div className="container">
                     <div className="footer__wrapper">
                         <div className="footer__col">

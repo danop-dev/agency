@@ -5,17 +5,29 @@ const CardContentSimple = ({
     title,
     paragraph,
     btn,
-    btnVal
+    btnVal,
+    style
 }
 ) => {
+
+    let cardFlex = `card-img__box `;
+    let cardTitle = `card-title `;
+
+    if(style === "line"){
+        cardFlex += `card-img__box--row`;
+        cardTitle += `card-title--row`;
+    }
+
+
     return (
         <Fragment>
-            <div className="card-img__box">
+            <div className={cardFlex}>
                 <img className="card-img" src={imgPath} alt="icon" />
+                {style === "line" ? <div className={cardTitle}>{title}</div> : null}
             </div>
-            <div className="card-title">{title}</div>
+            {style !== "line" ? <div className={cardTitle}>{title}</div> : null}
             <div className="card-p">{paragraph}</div>
-            {btn ? <a href="#" className="card-btn">{btnVal}</a> : null}
+            {btn ? <a href="#" className="card-btn">{btnVal}</a> : <a href="#" className="card-btn--more">{btnVal}</a>}
 
         </Fragment>
     )

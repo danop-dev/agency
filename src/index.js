@@ -11,7 +11,6 @@ import './animation.js'
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
-
 document.addEventListener("DOMContentLoaded", function () {
     const navBar = document.getElementById('navBar');
     window.addEventListener('scroll', function () {
@@ -33,9 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
         menuBurger.classList.toggle('active-burger');
         menuList.classList.toggle('list--active');
         burgerLine.classList.toggle('absolute--top-nav');
+
     })
-
-
 
     //Accordion
     const accordionItem = document.getElementsByClassName('accordion__item');

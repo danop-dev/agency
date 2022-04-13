@@ -47,15 +47,12 @@ const Header = ({
 
 
                                 <div className="header__btn-box">
-                                    <Button
-                                        type="primaryOrange"
-                                        name="How We Work"
-                                    />
-
-                                    <Button
-                                        type="secundaryEmty"
-                                        name="Contact Us"
-                                    />
+                                    {buttonData.map(item => (
+                                        <Button 
+                                            type={item.type}
+                                            name={item.name}
+                                        />
+                                    ))}
                                 </div>
 
                             </div>

@@ -21,10 +21,11 @@ import BlogCard from '../components/BlogCard';
 import ContactForm from '../components/ContactForm';
 import BannerContact from '../components/BannerContact';
 import Newsleter from '../components/Newsleter';
-import Fooetr from '../containers/Footer'
+import Fooetr from '../containers/Footer';
 
 // +++ Img imports +++
 import pic from '../assets/img/pic.png';
+import pic1 from '../assets/img/pic1.png';
 import aboutPic from '../assets/img/about-pic.png';
 import picSer from '../assets/img/pic-ser.png';
 import blockImg from '../assets/img/block.png';
@@ -47,20 +48,17 @@ import workImg4 from '../assets/img/work/4.jpg';
 // decor
 import starGift from '../assets/img/gift-star.svg';
 
-
 //team img
 import designer from '../assets/img/team/Designer.png';
 import reactDev from '../assets/img/team/ReactDev.png';
 import ilustrator from '../assets/img/team/Ilustrator.png';
 import productDes from '../assets/img/team/ProductDesigner.png';
 
-
 //testimonial img
 import testimonialPers1 from '../assets/img/testimonials/1.png';
 import testimonialPers2 from '../assets/img/testimonials/2.png';
 import testimonialPers3 from '../assets/img/testimonials/3.png';
 import testimonialPers4 from '../assets/img/testimonials/4.png';
-
 
 //awards img
 import awardImg1 from '../assets/img/awards/1.jpg';
@@ -71,18 +69,13 @@ import awardLogo1 from '../assets/img/awards/logo/1.png';
 import awardLogo2 from '../assets/img/awards/logo/2.png';
 import awardLogo3 from '../assets/img/awards/logo/3.png';
 
-
 //blog img
 import blogImg1 from '../assets/img/blog/1.jpg';
 import blogImg2 from '../assets/img/blog/2.jpg';
 import blogImg3 from '../assets/img/blog/3.jpg';
 
-
 //banner img
 import bannerContactImg from '../assets/img/pic-banner.png';
-
-
-
 
 const HomePage = () => {
   return (
@@ -103,6 +96,9 @@ const HomePage = () => {
             review={true}
             reviewColor="#fff"
 
+            buttonData={[
+              { type: "primaryOrange", name: "About Us" }
+            ]}
           />
         </div>
       </section>
@@ -131,8 +127,6 @@ const HomePage = () => {
           buttonData={[
             { type: "primaryOrange", name: "About Us" }
           ]}
-
-
         />
       </section>
 
@@ -170,7 +164,7 @@ const HomePage = () => {
 
       <section className="section features-section">
         <div className="container">
-          <Features />
+          <Features type="light" img={pic1} />
 
         </div>
       </section>
@@ -209,7 +203,6 @@ const HomePage = () => {
         </div>
       </section>
 
-
       <section className="section service-section">
         <Header
           subtitle="Service"
@@ -221,6 +214,10 @@ const HomePage = () => {
           starDecor={false}
           positionClass='staticWrapper'
           review_in={true}
+
+          buttonData={[
+            { type: "primaryOrange", name: "About Us" }
+          ]}
         />
       </section>
 
@@ -262,14 +259,11 @@ const HomePage = () => {
         </div>
       </section>
 
-
       <section className="section works-section section--dark">
         <div className="container">
-
           <WorkHead
             color="#fff"
           />
-
           <div className="work__wrapper">
             <div className="work__items-box d-flex --big-and-small-item">
               <WorkCard
@@ -318,7 +312,6 @@ const HomePage = () => {
                   name="Explore More"
                 />
               </div>
-
             </div>
             <div className="contact-card__info">
               <img src={blockImg} alt="Card" className="contact-card__center-img" />
@@ -327,9 +320,7 @@ const HomePage = () => {
             <img src={womanImg} alt="Card" className="contact-card__center-img contact-card--img-absolute" />
           </div>
         </div>
-
       </section>
-
 
       <section className="section events-card__section section--dark">
         <div className="container">
@@ -348,7 +339,6 @@ const HomePage = () => {
               btn={true}
               btnVal="Explore Now"
               btnLink="#"
-
             />
             <EventsCard
               day="15"
@@ -360,7 +350,6 @@ const HomePage = () => {
               btn={true}
               btnVal="Explore Now"
               btnLink="#"
-
             />
             <EventsCard
               day="2"
@@ -380,10 +369,7 @@ const HomePage = () => {
               name="Explore More"
             />
           </div>
-
         </div>
-
-
       </section>
 
       <section className="section team-section section--dark">
@@ -423,12 +409,10 @@ const HomePage = () => {
                 <div className="founde-name">Ren Delan</div>
                 <div className="founde-position">Founder</div>
               </div>
-
             </div>
           </div>
         </div>
       </section>
-
 
       <section className="section testimonials-section">
         <div className="container">
@@ -508,7 +492,6 @@ const HomePage = () => {
                   active: [true, true, true],
                   type: "normal"
                 }
-
               ]}
             />
           </div>
@@ -545,8 +528,6 @@ const HomePage = () => {
                     trigger: "Can provide your business",
                     content: "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business."
                   },
-
-
                 ]}
               />
             </div>
@@ -659,7 +640,6 @@ const HomePage = () => {
               <div className="contcat-our-info__header">Address</div>
               <div className="contcat-our-info__text">2247 Lunetta Street, TX 76301</div>
             </div>
-
           </div>
         </div>
       </section>
@@ -673,12 +653,8 @@ const HomePage = () => {
           />
         </div>
       </section>
-      
       <Fooetr />
-
-
     </Fragment>
-
   );
 };
 
