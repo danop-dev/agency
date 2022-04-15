@@ -1,20 +1,20 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import HomePage from './pages/HomePage';
-import PersonalPage from './pages/PersonalPage';
-import Webflow from './pages/Webflow';
+import HomePage           from './pages/HomePage';
+import PersonalPage       from './pages/PersonalPage';
+import Webflow            from './pages/Webflow';
+import AboutPage          from './pages/AboutPage';
+import ServicesPage       from './pages/ServicesPage';
+import PortfolioPage      from './pages/PortfolioPage';
+import ProjectPage        from './pages/ProjectPage';
+import BlogPage           from './pages/BlogPage';
 
 
-
-import AboutPage from './pages/AboutPage';
-import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
-import PortfolioPage from './pages/PortfolioPage';
 import PostPage from './pages/PostPage';
-import ServicesPage from './pages/ServicesPage';
 import WorkMediaPage from './pages/WorkMediaPage';
-
+import AboutPersonalPage from './pages/AboutPersonalPage';
 
 const App = () => {
   return (
@@ -24,13 +24,16 @@ const App = () => {
         <Route path='/personal' element={<PersonalPage />}/>
         <Route path='/webflow' element={<Webflow />}/>
         <Route path="/about" element={<AboutPage />} />
-
-
-
-
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/about-personal" element={<AboutPersonalPage />} />
+        <Route path="/services" element={<ServicesPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/project" element={<ProjectPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+
+
+
+
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/post" element={<PostPage />} />
         <Route path="/sercvices" element={<ServicesPage />} />
         <Route path="/work" element={<WorkMediaPage />} />

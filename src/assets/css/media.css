@@ -331,6 +331,24 @@
     .works-section--webflow .--work-3-item > .work__card-item{
         width: calc(50% - 16px);
     }
+
+    .portfolio-page-section .work__items-box{
+        justify-content: space-around;
+    }
+
+    .portfolio-page-section .work__items-box>.work__card-item{
+        width: 49%;
+        margin-bottom: 10px;
+    }
+
+    .portfolio-page-section .work__items-box>.work__card-item:first-child{
+        width: 100%;
+        height: none;
+    }
+
+    .info-section--project {
+        margin-top: 100px;
+    }
 }
 
 @media (max-width: 768px){
@@ -600,6 +618,18 @@
     .about__wrapper>.howWork__item{
         width: 100%;
     }
+
+    .testimonials--carousel .testimonials-card{
+        background-color: #fff;
+    }
+
+    .services-info__section .header__content-item{
+        width: 100%;
+    }
+
+    .recent-project__wrapper .work__items-box>.work__card-item{
+        width: 100%;
+    }
 }
 
 @media (max-width: 576px){
@@ -753,6 +783,20 @@
 
     .awards-section--webflow{
         padding: 0 0 460px 0;
+    }
 
+    .headre-min__title{
+        font-size: 3rem;
+    }
+
+    .portfolio-page-section .work__items-box>.work__card-item{
+        width: 100%;
+    }
+
+    .info-client-project .info-client__col{
+        width: 100%;
+    }
+    .info-client-project .info-client__col:first-child{
+        margin-bottom: 44px;
     }
 }

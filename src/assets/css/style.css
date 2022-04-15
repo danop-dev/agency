@@ -24,9 +24,16 @@ a{
 }
 
 .container {
+    max-width: 1240px;
     width: 100%;
     padding: 0px 20px;
-    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.container--min{
+    max-width: 600px;
+    width: 100%;
+    padding: 0px 15px;
     margin: 0 auto;
 }
 
@@ -74,6 +81,19 @@ a{
     text-transform: uppercase;
     color: #EF6D58;
     margin-bottom: 25px;
+}
+
+.paragraph{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+.paragraph--opacity{
+    opacity: .64;
+    font-size: 1rem;
 }
 
 /* === NAV BAR  === */
@@ -1560,9 +1580,7 @@ a{
 
 }
 
-
 /* === Awards SECTION CLOSE  === */
-
 
 /* === Blog SECTION   === */
 .blog__box{
@@ -1633,8 +1651,6 @@ a{
 }
 /* === Blog SECTION CLOSE  === */
 
-
-
 /* === Newsletter SECTION  === */
 
 .newsletter__section .line{
@@ -1695,7 +1711,6 @@ a{
 
     border-radius: 6px;
     background-color: #FDF0E9;
-
 }
 
 .contact-form__title{
@@ -1789,7 +1804,6 @@ a{
     justify-content: flex-end;
 }
 /* === Contact (map) SECTION CLOSE  === */
-
 
 /* === Contact our info SECTION   === */
 
@@ -1894,7 +1908,6 @@ a{
 /* === BannerContact SECTION CLOSE  === */
 
 /* === Footer === */
-
 .footer{
     padding: 90px 0 52px 0;
 }
@@ -2389,7 +2402,6 @@ a{
 
 /* !!!### PERSONAL PAGE ###!!! */
 
-
 /* !!!### Webflow PAGE ###!!! */
 
 /* MODIFY */
@@ -2448,7 +2460,6 @@ a{
 .section--minHeight60{
     height: 550px;
 }
-
 
 .empty-section{
     height: 450px;
@@ -2551,7 +2562,6 @@ a{
 
 /* !!!### Webflow PAGE ###!!! */
 
-
 /* !!!### ABOUT PAGE ###!!! */
 .headre-min{
     padding: 160px 0 65px 0;
@@ -2580,7 +2590,6 @@ a{
     color: inherit;
     opacity: .64;
 }
-
 
 .about__wrapper{
     align-items: flex-start;
@@ -2621,4 +2630,237 @@ a{
     width: 100%;
 }
 
+/* Testimonials Carousel */
+.testimonials--carousel .testimonials-card .testimonials-card__text {
+    max-height: 100%;
+}
+
+.testimonials-card{
+    height: 420px;
+    background-color: #fff;
+}
+
+.slick-slide .testimonials-card{
+    opacity: .25;
+    transition: all .2s linear;
+}
+
+.slick-center .testimonials-card{
+    height: 500px ;
+    opacity: 1;
+    transition: all .2s linear;
+
+}
+
 /* !!!### ABOUT PAGE ###!!! */
+
+/* !!!### ABOUT PERSONAL PAGE ###!!! */
+
+.personal-img{
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.personal-img img{
+    width: 100%;
+    height: auto;
+}
+
+.personal-info__section .header__content{
+    margin-top: 76px;
+}
+
+.personal-video__section .video-player{
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.founder-personal__info{
+    color: #391400;
+}
+
+.founder-personal__info>*{
+    color: inherit;
+}
+
+.founder-personal__info .h4-suptitle{
+    color: #EF6D58;
+}
+
+.founder-personal__info .founder-words__title{
+    position: relative;
+}
+
+.founder-personal__info .founder-words__title::after{
+    content: url(../img/personalPage/me/decor.svg);
+    position: absolute;
+    top: -50px;
+    right: 20px;
+    z-index: -1;
+}
+
+/* !!!### ABOUT PERSONAL PAGE ###!!! */
+
+/* !!!### SERVICES PAGE ###!!! */
+.services-info__section .header__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.services-info__section .header__content-item{
+    width: 48%;
+}
+.services-info__section .header__content-item .header__paragraph:first-child{
+    margin-top: 48px;
+}
+
+/* !!!### SERVICES PAGE ###!!! */
+
+
+/* !!!### PORTFOLIO PAGE ###!!! */
+
+.portfolio-page-section .work-list-btn .work-btn{
+    color: #391400 !important;
+    opacity: .64;
+}
+
+.portfolio-page-section .work-list-btn .work-btn:hover{
+    opacity: 1;
+}
+
+.portfolio-page-section .work__items-box{
+    margin-top: 60px;
+}
+
+.portfolio-page-section .work__card-item{
+    border-radius: 6px;
+}
+
+.portfolio-page-section .center-content{
+    margin-top: 40px;
+}
+
+
+/* !!!### PORTFOLIO PAGE ###!!! */
+
+
+/* !!!### PROJECT PAGE ###!!! */
+
+.info-section--project{
+    margin-top: 60px;
+}
+
+.info-project__wrapper{
+    color: #391400;
+    margin-bottom: 70px;
+}
+
+.back-btn{
+    display: flex;
+    align-items: center;
+
+    color: inherit;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    text-transform: uppercase;
+
+    transition: all .2s linear;
+}
+
+.back-btn::before{
+    content: "←";
+    display: flex;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-right: 14px;
+}
+
+.back-btn:hover{
+    color: #EF6D58;
+}
+
+.info-section--project .back-btn{
+    margin-bottom: 50px;
+}
+
+.info-section--project .info-project__wrapper>p{
+    color: inherit;
+    margin-bottom: 32px;
+}
+
+.info-client-project{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.info-client__col{
+    width: 50%;
+}
+
+.info-client__list-item, .info-client__date {
+    font-size: 1rem;
+}
+
+.logo-client{
+    display: block;
+    max-width: 110px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 44px;
+}
+
+.text-info-box{
+    margin-top: 77px;
+    margin-bottom: 65px;
+}
+
+.text-info-box>p{
+    margin-bottom: 20px;
+}
+
+.info-section--project .video__item{
+    width: 100%;
+}
+
+.info-section--project .howWork__item{
+    width: 50%;
+}
+
+.info-section--project .gallery__wrapper>.gallery__item{
+    width: 49%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    height: 210px;
+}
+
+.share-head{
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    color: rgba(57, 20, 0, 0.64);
+}
+
+.share-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.recent-project-section .work__card-item{
+    width: 49%;
+}
+
+.recent-project__wrapper{
+    margin-top: 40px;
+}
+
+/* !!!### PROJECT PAGE ###!!! */

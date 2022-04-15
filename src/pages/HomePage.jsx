@@ -21,7 +21,7 @@ import BlogCard from '../components/BlogCard';
 import ContactForm from '../components/ContactForm';
 import BannerContact from '../components/BannerContact';
 import Newsleter from '../components/Newsleter';
-import Fooetr from '../containers/Footer';
+import Footer from '../containers/Footer';
 
 // +++ Img imports +++
 import pic from '../assets/img/pic.png';
@@ -511,6 +511,7 @@ const HomePage = () => {
             </div>
             <div className="questions__half-box">
               <Accordion
+                type="standart"
                 accordionData={[
                   {
                     trigger: "A digital agency is a business",
@@ -653,7 +654,7 @@ const HomePage = () => {
           />
         </div>
       </section>
-      <Fooetr name={"Agency"}/>
+      <Footer name={"Agency"}/>
     </Fragment>
   );
 };

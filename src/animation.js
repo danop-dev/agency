@@ -40,33 +40,40 @@ $(document).ready(function () {
         ]
       });
 
-    
-
       $('.testimonials--carousel').slick({
         centerMode: true,
-        centerPadding: '120px',
+        centerPadding: '200px',
         slidesToShow: 3,
         dots: true,
         dotsClass: 'dosts-carousel',
         prevArrow: false,
         nextArrow: false,
-        
+
         responsive: [
+          {
+            breakpoint: 1600,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '250px',
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 1060,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '100px',
+              slidesToShow: 1
+            }
+          },
           {
             breakpoint: 768,
             settings: {
               arrows: false,
               centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 3
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
+              centerPadding: '0px',
               slidesToShow: 1
             }
           }

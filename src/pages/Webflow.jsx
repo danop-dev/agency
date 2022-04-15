@@ -17,7 +17,7 @@ import BlogCard from '../components/BlogCard';
 import ContactForm from '../components/ContactForm';
 import BannerContact from '../components/BannerContact';
 import Newsleter from '../components/Newsleter';
-import Fooetr from '../containers/Footer';
+import Footer from '../containers/Footer';
 
 //img 
 import headImg from '../assets/img/personalPage/head-img.png';
@@ -403,6 +403,7 @@ const Webflow = () => {
                         </div>
                         <div className="questions__half-box">
                             <Accordion
+                                type="standart"
                                 accordionData={[
                                     {
                                         trigger: "A digital agency is a business",
@@ -552,7 +553,7 @@ const Webflow = () => {
                 </div>
             </section>
 
-            <Fooetr name={"Webflow"}/>
+            <Footer name={"Webflow"}/>
             
         </Fragment>
     )

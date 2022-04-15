@@ -1,45 +1,24 @@
 import React, { Fragment } from 'react';
 
 import NavBar from '../components/Navbar';
-import Header from '../containers/Header';
 import Partner from '../components/Partner';
-// import Review from '../components/Review';
-import HowWork from '../components/HowWork';
-import VideoPreview from '../components/VideoPreview';
-import Features from '../components/Features';
 import CardContentSimple from '../components/CardContentSimple';
-import WorkHead from '../components/WorkHead';
-import WorkCard from '../components/WorkCard';
-import Button from '../components/Button';
-import EventsCard from '../components/EventsCard';
 import CarouselTeam from '../components/CarouselTeam';
 import TestimonialsCard from '../components/TestimonialsCard';
-import PriceCard from '../components/PriceCard';
 import Accordion from '../components/Accordion';
-import Awards from '../components/Awards';
-import BlogCard from '../components/BlogCard';
-import ContactForm from '../components/ContactForm';
 import BannerContact from '../components/BannerContact';
-import Newsleter from '../components/Newsleter';
-import Fooetr from '../containers/Footer';
+import Footer from '../containers/Footer';
 import HeadMin from '../containers/HeadMin';
-
-
 
 //gallery img
 import gallery1 from '../assets/img/personalPage/gallery/1.jpg';
 import gallery2 from '../assets/img/personalPage/gallery/2.jpg';
 import gallery3 from '../assets/img/personalPage/gallery/3.jpg';
 import gallery4 from '../assets/img/personalPage/gallery/4.jpg';
-import gallery5 from '../assets/img/personalPage/gallery/5.jpg';
-import gallery6 from '../assets/img/personalPage/gallery/6.jpg';
 
 // icons
 import ShapeIcon from '../assets/img/icon/Shape.svg';
 import AccesibilityIcon from '../assets/img/icon/Accesibility.svg';
-import DesignIcon from '../assets/img/icon/Design.svg';
-import DevelopIcon from '../assets/img/icon/Develop.svg';
-import SettingIcon from '../assets/img/icon/Settings.svg';
 
 //team img
 import designer from '../assets/img/team/Designer.png';
@@ -191,7 +170,7 @@ const AboutPage = () => {
           <h4 className="h4-suptitle">Testimonials</h4>
           <h2 className="h2-title --mb35">What Our <br /> Clients Saying </h2>
         </div>
-        <div className="testimonials__wrapper testimonials__wrapper--personal testimonials--carousel">
+        <div className="testimonials__wrapper testimonials__wrapper--personal testimonials--carousel"> 
           <TestimonialsCard
             testimonialsData={[
               {
@@ -262,7 +241,6 @@ const AboutPage = () => {
         </div>
       </section>
 
-
       <section className="section questions__section section--dark">
         <div className="container">
           <div className="questions__box">
@@ -276,6 +254,7 @@ const AboutPage = () => {
             </div>
             <div className="questions__full-box">
               <Accordion
+                type="standart"
                 accordionData={[
                   {
                     trigger: "A digital agency is a business",
@@ -316,9 +295,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <Fooetr name={"Agency"}/>
-
-
+      <Footer name={"Agency"}/>
     </Fragment>
   )
 }
