@@ -29,13 +29,11 @@ const App = () => {
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/project" element={<ProjectPage />} />
         <Route path="/blog" element={<BlogPage />} />
-
-
-
-
-        <Route path="/contact" element={<ContactPage />} />
         <Route path="/post" element={<PostPage />} />
-        <Route path="/sercvices" element={<ServicesPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+
+
+
         <Route path="/work" element={<WorkMediaPage />} />
       </Routes>
     </BrowserRouter>

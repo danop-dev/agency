@@ -3,10 +3,12 @@ import React, { Fragment } from 'react';
 
 const Accordion = ({ type, accordionData }) => {
 
-    function acordionContent() {
+    function acordionContent(contentAccordionData) {
+
+
         return (
             <div className="features__item">
-                <h2 className="h2-title">Give Your Site A New Look</h2>
+                <h2 className="h2-title">Designer</h2>
                 <p className="feature__paragraph" >Service range including technical skills, design, business understanding.</p>
                 <div className="features__todo">
                     <div className="features__todo-item">
@@ -21,12 +23,12 @@ const Accordion = ({ type, accordionData }) => {
 
     return (
         <Fragment>
-            <div className="accordion">
+            <div className="accordion accordion--bigContent">
                 {accordionData.map(item => (
                     <div className="accordion__item">
                         <div className="accordion__trigger">{item.trigger}</div>
                         <div className="accordion__content">{
-                            type === "standart" ? item.content : acordionContent()
+                            type === "standart" ? item.content : acordionContent(accordionData)
 
                         }</div>
                     </div>

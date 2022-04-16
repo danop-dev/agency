@@ -1,10 +1,8 @@
 import React, { Fragment } from 'react';
 
 import NavBar from '../components/Navbar';
-import Partner from '../components/Partner';
 import Fooetr from '../containers/Footer';
 import HeadMin from '../containers/HeadMin';
-import Button from '../components/Button';
 import Accordion from '../components/Accordion';
 import HowWork from '../components/HowWork';
 import BannerContact from '../components/BannerContact';
@@ -39,14 +37,31 @@ const ServicesPage = () => {
       <section className="section">
         <div className="container">
           <Accordion
+          type={"bigContent"}
             accordionData={[
               {
-                trigger: "A digital agency is a business",
-                content: "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business."
+                trigger: "Design",
+                content: [{
+                  title: "Agency is a business you hire to outsource your digital marketing efforts",
+                  paragraph: "Business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+                  listInfo: ["Web Development", "Brand Strategy", "Art Direction"]
+                }]
               },
               {
-                trigger: "A digital agency is a business",
-                content: "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business."
+                trigger: "Design",
+                content: [{
+                  title: "Agency is a business you hire to outsource your digital marketing efforts",
+                  paragraph: "Business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+                  listInfo: ["Web Development", "Brand Strategy", "Art Direction"]
+                }]
+              },
+              {
+                trigger: "Design",
+                content: [{
+                  title: "Agency is a business you hire to outsource your digital marketing efforts",
+                  paragraph: "Business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+                  listInfo: ["Web Development", "Brand Strategy", "Art Direction"]
+                }]
               }
             ]}
           />

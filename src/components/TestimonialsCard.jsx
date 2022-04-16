@@ -4,9 +4,7 @@ import Stack from '@mui/material/Stack';
 
 import Review from './Review';
 
-
 const TestimonialsCard = ({testimonialsData}) => {
-
     return (
         <Fragment>
             {testimonialsData.map(item => (
@@ -23,7 +21,6 @@ const TestimonialsCard = ({testimonialsData}) => {
                             pos={item.pos}
                             sizeImg={80}
                         />
-
                     </div>
                 </div>
             ))}

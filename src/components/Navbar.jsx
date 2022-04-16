@@ -13,10 +13,10 @@ const Navbar = ({name}) => {
             </li>
             <li className="nav__section-item  nav__section-item--large">
               <ul className="subnav">
-                <li className="nav__link-item"><a href="#" className="nav__link">About</a></li>
-                <li className="nav__link-item"><a href="#" className="nav__link">Services</a></li>
+                <li className="nav__link-item"><a href="/about" className="nav__link">About</a></li>
+                <li className="nav__link-item"><a href="/services" className="nav__link">Services</a></li>
                 <li className="nav__link-item"><a href="#" className="nav__link">Pricing</a></li>
-                <li className="nav__link-item"><a href="#" className="nav__link">Blog</a></li>
+                <li className="nav__link-item"><a href="/blog" className="nav__link">Blog</a></li>
               </ul>
             </li>
             <li className="nav__section-item">
