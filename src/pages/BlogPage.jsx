@@ -32,6 +32,7 @@ const BlogPage = () => {
               <BlogCard
                 blogData={[
                   {
+                    id: 1,
                     img: blogImg1,
                     link: "#",
                     category: "Stories",
@@ -39,6 +40,7 @@ const BlogPage = () => {
                     date: "5 Nov, 2021"
                   },
                   {
+                    id: 2,
                     img: blogImg2,
                     link: "#",
                     category: "Design",
@@ -52,6 +54,7 @@ const BlogPage = () => {
             <BlogCard
               blogData={[
                 {
+                  id: 1,
                   img: blogImg1,
                   link: "#",
                   category: "Stories",
@@ -59,6 +62,7 @@ const BlogPage = () => {
                   date: "5 Nov, 2021"
                 },
                 {
+                  id: 2,
                   img: blogImg2,
                   link: "#",
                   category: "Design",
@@ -66,6 +70,7 @@ const BlogPage = () => {
                   date: "29 Oct, 2021"
                 },
                 {
+                  id: 3,
                   img: blogImg3,
                   link: "#",
                   category: "Design",
@@ -73,6 +78,7 @@ const BlogPage = () => {
                   date: "29 Oct, 2021"
                 },
                 {
+                  id: 4,
                   img: blogImg1,
                   link: "#",
                   category: "Stories",
@@ -80,6 +86,7 @@ const BlogPage = () => {
                   date: "5 Nov, 2021"
                 },
                 {
+                  id: 5,
                   img: blogImg2,
                   link: "#",
                   category: "Design",
@@ -87,6 +94,7 @@ const BlogPage = () => {
                   date: "29 Oct, 2021"
                 },
                 {
+                  id: 6,
                   img: blogImg3,
                   link: "#",
                   category: "Design",

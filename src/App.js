@@ -5,16 +5,13 @@ import HomePage           from './pages/HomePage';
 import PersonalPage       from './pages/PersonalPage';
 import Webflow            from './pages/Webflow';
 import AboutPage          from './pages/AboutPage';
+import AboutPersonalPage  from './pages/AboutPersonalPage';
 import ServicesPage       from './pages/ServicesPage';
 import PortfolioPage      from './pages/PortfolioPage';
 import ProjectPage        from './pages/ProjectPage';
 import BlogPage           from './pages/BlogPage';
-
-
-import ContactPage from './pages/ContactPage';
-import PostPage from './pages/PostPage';
-import WorkMediaPage from './pages/WorkMediaPage';
-import AboutPersonalPage from './pages/AboutPersonalPage';
+import PostPage           from './pages/PostPage';
+import ContactPage        from './pages/ContactPage';
 
 const App = () => {
   return (
@@ -32,9 +29,6 @@ const App = () => {
         <Route path="/post" element={<PostPage />} />
         <Route path="/contact" element={<ContactPage />} />
 
-
-
-        <Route path="/work" element={<WorkMediaPage />} />
       </Routes>
     </BrowserRouter>
 

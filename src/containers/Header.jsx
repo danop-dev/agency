@@ -48,7 +48,7 @@ const Header = ({
 
                                 <div className="header__btn-box">
                                     {buttonData.map(item => (
-                                        <Button 
+                                        <Button key={item.id} 
                                             type={item.type}
                                             name={item.name}
                                         />

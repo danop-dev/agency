@@ -27,6 +27,7 @@ const PostPage = () => {
 
 
   const listItem = (data, type) => {
+    let key = 1;
     return (
       <Fragment>
         {
@@ -34,13 +35,13 @@ const PostPage = () => {
             ?
             <ol className="text-list --decimalList">
               {data.map(item => (
-                <li className="text-list__item">{item}</li>
+                <li key={key++} className="text-list__item">{item}</li>
               ))}
             </ol>
             :
             <ul className="text-list --circleList">
               {data.map(item => (
-                <li className="text-list__item">{item}</li>
+                <li key={key++} className="text-list__item">{item}</li>
               ))}
             </ul>
         }
@@ -137,6 +138,7 @@ const PostPage = () => {
           <BlogCard
             blogData={[
               {
+                id: 1,
                 img: blogImg1,
                 link: "#",
                 category: "Stories",
@@ -144,6 +146,7 @@ const PostPage = () => {
                 date: "5 Nov, 2021"
               },
               {
+                id: 2,
                 img: blogImg2,
                 link: "#",
                 category: "Design",
@@ -151,6 +154,7 @@ const PostPage = () => {
                 date: "29 Oct, 2021"
               },
               {
+                id: 3,
                 img: blogImg3,
                 link: "#",
                 category: "Design",

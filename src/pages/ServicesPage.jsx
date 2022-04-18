@@ -40,29 +40,33 @@ const ServicesPage = () => {
           type={"bigContent"}
             accordionData={[
               {
+                id: 1, 
                 trigger: "Design",
-                content: [{
+                content: {
                   title: "Agency is a business you hire to outsource your digital marketing efforts",
                   paragraph: "Business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
                   listInfo: ["Web Development", "Brand Strategy", "Art Direction"]
-                }]
+                }
               },
               {
-                trigger: "Design",
-                content: [{
+                id: 2, 
+                trigger: "Development",
+                content: {
                   title: "Agency is a business you hire to outsource your digital marketing efforts",
                   paragraph: "Business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
                   listInfo: ["Web Development", "Brand Strategy", "Art Direction"]
-                }]
+                }
               },
               {
-                trigger: "Design",
-                content: [{
+                id: 1, 
+                trigger: "Marketing",
+                content: {
                   title: "Agency is a business you hire to outsource your digital marketing efforts",
                   paragraph: "Business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
                   listInfo: ["Web Development", "Brand Strategy", "Art Direction"]
-                }]
+                }
               }
+
             ]}
           />
         </div>
@@ -85,7 +89,7 @@ const ServicesPage = () => {
       </section>
 
       <Fooetr name={"Agency"}/>
-
+    
     </Fragment>
   );
 };

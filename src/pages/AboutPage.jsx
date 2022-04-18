@@ -151,15 +151,15 @@ const AboutPage = () => {
           <CarouselTeam
             imgPeople={
               [
-                { img: designer, name: "Azah Anyeni", pos: "Designer" },
-                { img: reactDev, name: "Roelof Bekkenenks", pos: "React Developer" },
-                { img: ilustrator, name: "Leonardo Oliveira", pos: "Illustrator" },
-                { img: productDes, name: "Izabella Tabakova", pos: "Product Designer" },
+                { id: 1, img: designer, name: "Azah Anyeni", pos: "Designer" },
+                { id: 2, img: reactDev, name: "Roelof Bekkenenks", pos: "React Developer" },
+                { id: 3, img: ilustrator, name: "Leonardo Oliveira", pos: "Illustrator" },
+                { id: 4, img: productDes, name: "Izabella Tabakova", pos: "Product Designer" },
 
-                { img: designer, name: "Azah Anyeni", pos: "Designer" },
-                { img: reactDev, name: "Roelof Bekkenenks", pos: "React Developer" },
-                { img: ilustrator, name: "Leonardo Oliveira", pos: "Illustrator" },
-                { img: productDes, name: "Izabella Tabakova", pos: "Product Designer" }
+                { id: 5, img: designer, name: "Azah Anyeni", pos: "Designer" },
+                { id: 6, img: reactDev, name: "Roelof Bekkenenks", pos: "React Developer" },
+                { id: 7, img: ilustrator, name: "Leonardo Oliveira", pos: "Illustrator" },
+                { id: 8, img: productDes, name: "Izabella Tabakova", pos: "Product Designer" }
               ]}
           />
         </div>
@@ -174,6 +174,7 @@ const AboutPage = () => {
           <TestimonialsCard
             testimonialsData={[
               {
+                id: 1,
                 rating: 3.5,
                 text: "A digital agency is a business you hire to outsource your digital marketing efforts, instead of      handling in-house. They can provide your business with a variety of digital solutions to promote your   product or service online and help you.Azah Anyeni",
                 imgPers: testimonialPers1,
@@ -181,6 +182,7 @@ const AboutPage = () => {
                 pos: "Meta Inc."
               },
               {
+                id: 2,
                 rating: 4,
                 text: "Provide your business with a variety of digital solutions to promote your product or service online.",
                 imgPers: testimonialPers2,
@@ -188,6 +190,7 @@ const AboutPage = () => {
                 pos: "Photogram"
               },
               {
+                id: 3,
                 rating: 5,
                 text: "Promote your product or service online and help you hit your marketing goals and grow your business.",
                 imgPers: testimonialPers3,
@@ -195,6 +198,7 @@ const AboutPage = () => {
                 pos: "Twitor"
               },
               {
+                id: 4,
                 rating: 3.5,
                 text: "A digital agency is a business you hire to outsource your digital marketing efforts, instead of      handling in-house. They can provide your business with a variety of digital solutions to promote your   product or service online and help you.Azah Anyeni",
                 imgPers: testimonialPers1,
@@ -202,6 +206,7 @@ const AboutPage = () => {
                 pos: "Meta Inc."
               },
               {
+                id: 5,
                 rating: 4,
                 text: "Provide your business with a variety of digital solutions to promote your product or service online.",
                 imgPers: testimonialPers2,
@@ -209,6 +214,7 @@ const AboutPage = () => {
                 pos: "Photogram"
               },
               {
+                id: 6,
                 rating: 5,
                 text: "Promote your product or service online and help you hit your marketing goals and grow your business.",
                 imgPers: testimonialPers3,
@@ -216,6 +222,7 @@ const AboutPage = () => {
                 pos: "Twitor"
               },
               {
+                id: 7,
                 rating: 3.5,
                 text: "A digital agency is a business you hire to outsource your digital marketing efforts, instead of      handling in-house. They can provide your business with a variety of digital solutions to promote your   product or service online and help you.Azah Anyeni",
                 imgPers: testimonialPers1,
@@ -223,6 +230,7 @@ const AboutPage = () => {
                 pos: "Meta Inc."
               },
               {
+                id: 8,
                 rating: 4,
                 text: "Provide your business with a variety of digital solutions to promote your product or service online.",
                 imgPers: testimonialPers2,
@@ -230,6 +238,7 @@ const AboutPage = () => {
                 pos: "Photogram"
               },
               {
+                id: 9,
                 rating: 5,
                 text: "Promote your product or service online and help you hit your marketing goals and grow your business.",
                 imgPers: testimonialPers3,
@@ -257,18 +266,22 @@ const AboutPage = () => {
                 type="standart"
                 accordionData={[
                   {
+                    id: 1,
                     trigger: "A digital agency is a business",
                     content: "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business."
                   },
                   {
+                    id: 2,
                     trigger: "Hire to outsource your digital",
                     content: "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business."
                   },
                   {
+                    id: 3,
                     trigger: "Marketing efforts",
                     content: "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business."
                   },
                   {
+                    id: 4,
                     trigger: "Can provide your business",
                     content: "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business."
                   },

@@ -648,6 +648,10 @@
     .recent-project__wrapper .work__items-box>.work__card-item{
         width: 100%;
     }
+
+    .accordion--bigContent .accordion__trigger{
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 576px){
@@ -835,6 +839,10 @@
 
     .text-info-author{
         margin-bottom: 25px;
+    }
+
+    .accordion__trigger::after{
+        display: none;
     }
 
 }

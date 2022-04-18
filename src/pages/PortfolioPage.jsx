@@ -18,6 +18,17 @@ import bannerContactImg from '../assets/img/pic-banner.png';
 
 
 const PortfolioPage = () => {
+
+  const dataWork = [
+    { id: 1, img: workImg1, subtitle: "Design", title: "SOFA" },
+    { id: 2, img: workImg2, subtitle: "Branding", title: "Branding" },
+    { id: 3, img: workImg3, subtitle: "Branding", title: "Branding" },
+    { id: 4, img: workImg4, subtitle: "Design", title: "SOFA" },
+
+    { id: 5, img: workImg1, subtitle: "Design", title: "SOFA" },
+    { id: 6, img: workImg4, subtitle: "Design", title: "SOFA" }
+  ]
+
   return (
     <Fragment>
       <NavBar name={"Agency"} />
@@ -39,36 +50,14 @@ const PortfolioPage = () => {
           </div>
 
           <div className="work__items-box d-flex --work-3-item">
-            <WorkCard
-              imgPath={workImg1}
-              subtitle="Design"
-              title="SOFA"
-            />
-            <WorkCard
-              imgPath={workImg2}
-              subtitle="Branding"
-              title="KeyBoard"
-            />
-            <WorkCard
-              imgPath={workImg3}
-              subtitle="Branding"
-              title="KeyBoard"
-            />
-            <WorkCard
-              imgPath={workImg4}
-              subtitle="Design"
-              title="SOFA"
-            />
-            <WorkCard
-              imgPath={workImg1}
-              subtitle="Branding"
-              title="KeyBoard"
-            />
-            <WorkCard
-              imgPath={workImg4}
-              subtitle="Branding"
-              title="KeyBoard"
-            />
+            {dataWork.map(item => (
+              <WorkCard key={item.id}
+                imgPath={item.img}
+                subtitle={item.subtitle}
+                title={item.title}
+              />
+            ))}
+
           </div>
           <div className="center-content">
             <Button

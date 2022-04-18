@@ -97,7 +97,7 @@ const HomePage = () => {
             reviewColor="#fff"
 
             buttonData={[
-              { type: "primaryOrange", name: "About Us" }
+              { id: 1, type: "primaryOrange", name: "About Us" }
             ]}
           />
         </div>
@@ -125,7 +125,7 @@ const HomePage = () => {
           positionClass='staticWrapper'
 
           buttonData={[
-            { type: "primaryOrange", name: "About Us" }
+            { id: 1, type: "primaryOrange", name: "About Us" }
           ]}
         />
       </section>
@@ -216,7 +216,7 @@ const HomePage = () => {
           review_in={true}
 
           buttonData={[
-            { type: "primaryOrange", name: "About Us" }
+            { id: 1, type: "primaryOrange", name: "About Us" }
           ]}
         />
       </section>
@@ -382,15 +382,15 @@ const HomePage = () => {
           <CarouselTeam
             imgPeople={
               [
-                { img: designer, name: "Azah Anyeni", pos: "Designer" },
-                { img: reactDev, name: "Roelof Bekkenenks", pos: "React Developer" },
-                { img: ilustrator, name: "Leonardo Oliveira", pos: "Illustrator" },
-                { img: productDes, name: "Izabella Tabakova", pos: "Product Designer" },
+                { id: 1, img: designer, name: "Azah Anyeni", pos: "Designer" },
+                { id: 2, img: reactDev, name: "Roelof Bekkenenks", pos: "React Developer" },
+                { id: 3, img: ilustrator, name: "Leonardo Oliveira", pos: "Illustrator" },
+                { id: 4, img: productDes, name: "Izabella Tabakova", pos: "Product Designer" },
 
-                { img: designer, name: "Azah Anyeni", pos: "Designer" },
-                { img: reactDev, name: "Roelof Bekkenenks", pos: "React Developer" },
-                { img: ilustrator, name: "Leonardo Oliveira", pos: "Illustrator" },
-                { img: productDes, name: "Izabella Tabakova", pos: "Product Designer" }
+                { id: 5, img: designer, name: "Azah Anyeni", pos: "Designer" },
+                { id: 6, img: reactDev, name: "Roelof Bekkenenks", pos: "React Developer" },
+                { id: 7, img: ilustrator, name: "Leonardo Oliveira", pos: "Illustrator" },
+                { id: 8, img: productDes, name: "Izabella Tabakova", pos: "Product Designer" }
               ]}
           />
         </div>
@@ -424,6 +424,7 @@ const HomePage = () => {
             <TestimonialsCard
               testimonialsData={[
                 {
+                  id: 1,
                   rating: 3.5,
                   text: "A digital agency is a business you hire to outsource your digital marketing efforts, instead of      handling in-house. They can provide your business with a variety of digital solutions to promote your   product or service online and help you.Azah Anyeni",
                   imgPers: testimonialPers1,
@@ -431,6 +432,7 @@ const HomePage = () => {
                   pos: "Meta Inc."
                 },
                 {
+                  id: 2,
                   rating: 4,
                   text: "Provide your business with a variety of digital solutions to promote your product or service online.",
                   imgPers: testimonialPers2,
@@ -438,6 +440,7 @@ const HomePage = () => {
                   pos: "Photogram"
                 },
                 {
+                  id: 3,
                   rating: 5,
                   text: "Promote your product or service online and help you hit your marketing goals and grow your business.",
                   imgPers: testimonialPers3,
@@ -445,6 +448,7 @@ const HomePage = () => {
                   pos: "Twitor"
                 },
                 {
+                  id: 4,
                   rating: 5,
                   text: "Promote your product or service online and help you hit your marketing goals and grow your business.",
                   imgPers: testimonialPers4,
@@ -473,12 +477,14 @@ const HomePage = () => {
             <PriceCard
               pricesData={[
                 {
+                  id: 1,
                   supTitle: "Consultation",
                   price: "Free",
                   describe: "Your digital marketing efforts, instead of handling in-house.",
                   active: [true, false, false], type: "normal"
                 },
                 {
+                  id: 2,
                   supTitle: "Design",
                   price: "$1500",
                   describe: "Provide your business with a variety of digital solutions to promote.",
@@ -486,6 +492,7 @@ const HomePage = () => {
                   type: "popular"
                 },
                 {
+                  id: 3,
                   supTitle: "Design+Code",
                   price: "$2900",
                   describe: "Help you hit your marketing goals and grow your business.",
@@ -514,18 +521,22 @@ const HomePage = () => {
                 type="standart"
                 accordionData={[
                   {
+                    id: 1,
                     trigger: "A digital agency is a business",
                     content: "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business."
                   },
                   {
+                    id: 2,
                     trigger: "Hire to outsource your digital",
                     content: "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business."
                   },
                   {
+                    id: 3,
                     trigger: "Marketing efforts",
                     content: "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business."
                   },
                   {
+                    id: 4,
                     trigger: "Can provide your business",
                     content: "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business."
                   },
@@ -544,6 +555,7 @@ const HomePage = () => {
           <Awards
             awardsData={[
               {
+                id: 1,
                 img: awardImg1,
                 title: "SOFA",
                 date: "25 Oct, 2021",
@@ -551,6 +563,7 @@ const HomePage = () => {
                 logo: awardLogo1
               },
               {
+                id: 2,
                 img: awardImg2,
                 title: "KeyBoard",
                 date: "19 Oct, 2021",
@@ -558,6 +571,7 @@ const HomePage = () => {
                 logo: awardLogo2
               },
               {
+                id: 3,
                 img: awardImg3,
                 title: "Work Media",
                 date: "7 Oct, 2021",
@@ -588,6 +602,7 @@ const HomePage = () => {
           <BlogCard
             blogData={[
               {
+                id: 1,
                 img: blogImg1,
                 link: "#",
                 category: "Stories",
@@ -595,6 +610,7 @@ const HomePage = () => {
                 date: "5 Nov, 2021"
               },
               {
+                id: 2,
                 img: blogImg2,
                 link: "#",
                 category: "Design",
@@ -602,6 +618,7 @@ const HomePage = () => {
                 date: "29 Oct, 2021"
               },
               {
+                id: 3,
                 img: blogImg3,
                 link: "#",
                 category: "Marketing",

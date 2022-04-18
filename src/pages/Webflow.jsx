@@ -68,6 +68,17 @@ import bannerContactImg from '../assets/img/pic-banner.png';
 
 
 const Webflow = () => {
+
+    const dataWork = [
+        { id: 1, img: workImg1, subtitle: "Design", title: "SOFA" },
+        { id: 2, img: workImg2, subtitle: "Branding", title: "KeyBoard" },
+        { id: 3, img: workImg3, subtitle: "Branding", title: "Branding" },
+        { id: 4, img: workImg4, subtitle: "Design", title: "SOFA" },
+
+        { id: 5, img: workImg1, subtitle: "Branding", title: "KeyBoard" },
+        { id: 6, img: workImg4, subtitle: "Branding", title: "KeyBoard" }
+    ]
+
     return (
         <Fragment>
             <NavBar name={"Webflow"} />
@@ -85,8 +96,8 @@ const Webflow = () => {
                         review={false}
 
                         buttonData={[
-                            { type: "primaryOrange", name: "Explore Work" },
-                            { type: "secundaryEmty", name: "Contact Me" }
+                            { id: 1, type: "primaryOrange", name: "Explore Work" },
+                            { id: 2, type: "secundaryEmty", name: "Contact Me" }
                         ]}
                     />
                 </div>
@@ -140,7 +151,7 @@ const Webflow = () => {
                     positionClass='staticWrapper'
 
                     buttonData={[
-                        { type: "DarckPurpure", name: "About Webflow" }
+                        { id: 1, type: "DarckPurpure", name: "About Webflow" }
                     ]}
                 />
             </section>
@@ -224,36 +235,15 @@ const Webflow = () => {
                         color="#391400"
                     />
                     <div className="work__items-box d-flex --work-3-item">
-                        <WorkCard
-                            imgPath={workImg1}
-                            subtitle="Design"
-                            title="SOFA"
-                        />
-                        <WorkCard
-                            imgPath={workImg2}
-                            subtitle="Branding"
-                            title="KeyBoard"
-                        />
-                        <WorkCard
-                            imgPath={workImg3}
-                            subtitle="Branding"
-                            title="KeyBoard"
-                        />
-                        <WorkCard
-                            imgPath={workImg4}
-                            subtitle="Design"
-                            title="SOFA"
-                        />
-                        <WorkCard
-                            imgPath={workImg1}
-                            subtitle="Branding"
-                            title="KeyBoard"
-                        />
-                        <WorkCard
-                            imgPath={workImg4}
-                            subtitle="Branding"
-                            title="KeyBoard"
-                        />
+
+                        {dataWork.map(item => (
+                            <WorkCard key={item.id}
+                                imgPath={item.img}
+                                subtitle={item.subtitle}
+                                title={item.title}
+                            />
+                        ))}
+                        
                     </div>
                     <div className="center-content">
                         <Button
@@ -301,7 +291,7 @@ const Webflow = () => {
                     positionClass='staticWrapper'
 
                     buttonData={[
-                        { type: "DarckPurpure", name: "About" }
+                        { id: 1, type: "DarckPurpure", name: "About" }
                     ]}
                 />
             </section>
@@ -316,6 +306,7 @@ const Webflow = () => {
                         <TestimonialsCard
                             testimonialsData={[
                                 {
+                                    id: 1,
                                     rating: 3.5,
                                     text: "A digital agency is a business you hire to outsource your digital marketing efforts, instead of      handling in-house. They can provide your business with a variety of digital solutions to promote your   product or service online and help you.Azah Anyeni",
                                     imgPers: testimonialPers1,
@@ -323,6 +314,7 @@ const Webflow = () => {
                                     pos: "Meta Inc."
                                 },
                                 {
+                                    id: 2,
                                     rating: 4,
                                     text: "Provide your business with a variety of digital solutions to promote your product or service online.",
                                     imgPers: testimonialPers2,
@@ -330,6 +322,7 @@ const Webflow = () => {
                                     pos: "Photogram"
                                 },
                                 {
+                                    id: 3,
                                     rating: 5,
                                     text: "Promote your product or service online and help you hit your marketing goals and grow your business.",
                                     imgPers: testimonialPers3,
@@ -337,6 +330,7 @@ const Webflow = () => {
                                     pos: "Twitor"
                                 },
                                 {
+                                    id: 4,
                                     rating: 5,
                                     text: "Promote your product or service online and help you hit your marketing goals and grow your business.",
                                     imgPers: testimonialPers4,
@@ -365,12 +359,14 @@ const Webflow = () => {
                         <PriceCard
                             pricesData={[
                                 {
+                                    id: 1,
                                     supTitle: "Consultation",
                                     price: "Free",
                                     describe: "Your digital marketing efforts, instead of handling in-house.",
                                     active: [true, false, false], type: "normal"
                                 },
                                 {
+                                    id: 2,
                                     supTitle: "Design",
                                     price: "$1500",
                                     describe: "Provide your business with a variety of digital solutions to promote.",
@@ -378,6 +374,7 @@ const Webflow = () => {
                                     type: "popular"
                                 },
                                 {
+                                    id: 3,
                                     supTitle: "Design+Code",
                                     price: "$2900",
                                     describe: "Help you hit your marketing goals and grow your business.",
@@ -406,18 +403,22 @@ const Webflow = () => {
                                 type="standart"
                                 accordionData={[
                                     {
+                                        id: 1,
                                         trigger: "A digital agency is a business",
                                         content: "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business."
                                     },
                                     {
+                                        id: 2,
                                         trigger: "Hire to outsource your digital",
                                         content: "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business."
                                     },
                                     {
+                                        id: 3,
                                         trigger: "Marketing efforts",
                                         content: "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business."
                                     },
                                     {
+                                        id: 4,
                                         trigger: "Can provide your business",
                                         content: "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business."
                                     },
@@ -443,6 +444,7 @@ const Webflow = () => {
                     <Awards
                         awardsData={[
                             {
+                                id: 1,
                                 img: awardImg1,
                                 title: "SOFA",
                                 date: "25 Oct, 2021",
@@ -450,6 +452,7 @@ const Webflow = () => {
                                 logo: awardLogo1
                             },
                             {
+                                id: 2,
                                 img: awardImg2,
                                 title: "KeyBoard",
                                 date: "19 Oct, 2021",
@@ -457,6 +460,7 @@ const Webflow = () => {
                                 logo: awardLogo2
                             },
                             {
+                                id: 3,
                                 img: awardImg3,
                                 title: "Work Media",
                                 date: "7 Oct, 2021",
@@ -487,6 +491,7 @@ const Webflow = () => {
                     <BlogCard
                         blogData={[
                             {
+                                id: 1,
                                 img: blogImg1,
                                 link: "#",
                                 category: "Stories",
@@ -494,6 +499,7 @@ const Webflow = () => {
                                 date: "5 Nov, 2021"
                             },
                             {
+                                id: 2,
                                 img: blogImg2,
                                 link: "#",
                                 category: "Design",
@@ -501,6 +507,7 @@ const Webflow = () => {
                                 date: "29 Oct, 2021"
                             },
                             {
+                                id: 3,
                                 img: blogImg3,
                                 link: "#",
                                 category: "Marketing",
@@ -553,8 +560,8 @@ const Webflow = () => {
                 </div>
             </section>
 
-            <Footer name={"Webflow"}/>
-            
+            <Footer name={"Webflow"} />
+
         </Fragment>
     )
 }

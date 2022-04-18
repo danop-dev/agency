@@ -71,7 +71,7 @@ const PersonalPage = () => {
                         review={false}
 
                         buttonData={[
-                            { type: "primaryOrange", name: "About Us" }
+                            { id: 1, type: "primaryOrange", name: "About Us" }
                         ]}
                     />
                 </div>
@@ -163,7 +163,7 @@ const PersonalPage = () => {
                     positionClass='staticWrapper'
 
                     buttonData={[
-                        { type: "primaryOrange", name: "About Us" }
+                        { id: 1, type: "primaryOrange", name: "About Us" }
                     ]}
                 />
             </section>
@@ -232,6 +232,7 @@ const PersonalPage = () => {
                         <TestimonialsCard
                             testimonialsData={[
                                 {
+                                    id: 1,
                                     rating: 3.5,
                                     text: "A digital agency is a business you hire to outsource your digital marketing efforts, instead of      handling in-house. They can provide your business with a variety of digital solutions to promote your   product or service online and help you.Azah Anyeni",
                                     imgPers: testimonialPers1,
@@ -239,6 +240,7 @@ const PersonalPage = () => {
                                     pos: "Meta Inc."
                                 },
                                 {
+                                    id: 2,
                                     rating: 4,
                                     text: "Provide your business with a variety of digital solutions to promote your product or service online.",
                                     imgPers: testimonialPers2,
@@ -246,6 +248,7 @@ const PersonalPage = () => {
                                     pos: "Photogram"
                                 },
                                 {
+                                    id: 3,
                                     rating: 5,
                                     text: "Promote your product or service online and help you hit your marketing goals and grow your business.",
                                     imgPers: testimonialPers3,
@@ -280,18 +283,22 @@ const PersonalPage = () => {
                                 type="standart"
                                 accordionData={[
                                     {
+                                        id: 1,
                                         trigger: "A digital agency is a business",
                                         content: "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business."
                                     },
                                     {
+                                        id: 2,
                                         trigger: "Hire to outsource your digital",
                                         content: "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business."
                                     },
                                     {
+                                        id: 3,
                                         trigger: "Marketing efforts",
                                         content: "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business."
                                     },
                                     {
+                                        id: 4,
                                         trigger: "Can provide your business",
                                         content: "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business."
                                     },
@@ -327,6 +334,7 @@ const PersonalPage = () => {
                     <BlogCard
                         blogData={[
                             {
+                                id: 1,
                                 img: blogImg1,
                                 link: "#",
                                 category: "Stories",
@@ -334,6 +342,7 @@ const PersonalPage = () => {
                                 date: "5 Nov, 2021"
                             },
                             {
+                                id: 2,
                                 img: blogImg2,
                                 link: "#",
                                 category: "Design",
@@ -341,6 +350,7 @@ const PersonalPage = () => {
                                 date: "29 Oct, 2021"
                             },
                             {
+                                id: 3,
                                 img: blogImg3,
                                 link: "#",
                                 category: "Marketing",
@@ -393,7 +403,7 @@ const PersonalPage = () => {
                     starDecor={false}
                     positionClass='staticWrapper'
                     buttonData={[
-                        { type: "primaryOrange", name: "Contact Me" }
+                        {id: 1, type: "primaryOrange", name: "Contact Me" }
                     ]}
                 />
             </section>

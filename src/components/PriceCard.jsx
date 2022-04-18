@@ -6,7 +6,7 @@ const PriceCard = ({pricesData}) => {
     return (
         <Fragment>
             {pricesData.map(item => (
-                <div className="pricing-card">
+                <div key={item.id} className="pricing-card">
                     {item.type == "popular" ? <div className="pricing-card__popular">Popular</div> : null}
                     <div className="h4-suptitle">{item.supTitle}</div>
                     <div className="pricing-card__price">{item.price}</div>

@@ -36,21 +36,7 @@ const Button = ({
   }
 
 
-
-
-  const commonStyles = {
-
-  };
-
-  return (
-    <button
-      className={styleClass}
-      style={{ ...commonStyles }}
-
-    > {name} </button>
-
-
-  )
+  return ( <button className={styleClass}> {name} </button> )
 }
 
 export default Button

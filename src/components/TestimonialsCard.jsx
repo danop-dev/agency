@@ -8,7 +8,7 @@ const TestimonialsCard = ({testimonialsData}) => {
     return (
         <Fragment>
             {testimonialsData.map(item => (
-                <div className="testimonials-card">
+                <div key={item.id} className="testimonials-card">
                     <div className="testimonials-card__rating">
                         <Rating name="half-rating" defaultValue={item.rating} precision={0.5} />
                     </div>

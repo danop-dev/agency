@@ -5,7 +5,7 @@ const Awards = ({ awardsData }) => {
     <Fragment>
       <div className="awards__wrapper">
         {awardsData.map(item => (
-          <div className="awards__wrapper-item">
+          <div key={item.id} className="awards__wrapper-item">
             <div className="line"></div>
             <div className="awards__item">
               <div className="awards__item-box">

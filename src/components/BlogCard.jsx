@@ -29,7 +29,7 @@ const BlogCard = ({ blogData, type }) => {
 
                     <div className="blog__col blog__col--min">
                         {blogDataMinus.map(item => (
-                            <div className="blog-card__item">
+                            <div key={item.id} className="blog-card__item">
                                 <div className="blog-card__img">
                                     <a href={item.link}>
                                         <img src={item.img} alt="Blog Img" />
@@ -52,7 +52,7 @@ const BlogCard = ({ blogData, type }) => {
             <Fragment>
                 <div className="blog__wrapper">
                     {blogData.map(item => (
-                        <div className="blog-card__item">
+                        <div key={item.id} className="blog-card__item">
                             <div className="blog-card__img">
                                 <a href={item.link}>
                                     <img src={item.img} alt="Blog Img" />

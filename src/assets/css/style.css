@@ -1445,13 +1445,17 @@ a{
 }
 
 .accordion__trigger::after{
-    content: url(../img/arrow-min.svg);
+    content: "";
 
     width: 32px;
     height: 32px;
     border-radius: 50%;
 
-    background: #EF6D58;
+    background: url(../img/arrow-min.svg) #EF6D58;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+
     display: flex;
     justify-content: center;
 
@@ -3059,8 +3063,49 @@ a{
     color: #391400;
 
     border-top: 1px solid #F3D1BF;
-    border-bottom: 1px solid #F3D1BF;
-    
+    border-bottom: 1px solid #F3D1BF;    
+}
+
+.accordion--bigContent .accordion__trigger>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.accordion--bigContent .accordion__trigger>div::before{
+    content: "";
+    display: block;
+    margin-right: 36px;
+    background: url(../img/icon/Carousel/briefcase.svg);
+    background-color: #EF6C57;
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.accordion--bigContent .accordion__item:first-child .accordion__trigger>div:before{
+    background: url(../img/icon/Carousel/palette.svg);
+    background-color: #EF6C57;
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+
+.accordion--bigContent .accordion__item:last-child .accordion__trigger>div:before{
+    background: url(../img/icon/Carousel/gear.svg);
+    background-color: #EF6C57;
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+
+.accordion--bigContent .accordion__content{
+    color: #391400;
 }
 
 .accordion--bigContent .accordion__item--active .accordion__content {
