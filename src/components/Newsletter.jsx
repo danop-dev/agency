@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import Button from './Button'
 
-const Newsleter = () => {
+const Newsletter = ({btnType}) => {
     return (
         <Fragment>
             <div className="newsletter__wrapper">
@@ -10,7 +10,7 @@ const Newsleter = () => {
                     <form action="#" className="newsletter-form-action">
                         <input className="newsletter__email" type="email" name="email" placeholder="Your email" />   
                         <Button
-                            type={"secundaryTransparent"}
+                            type={btnType}
                             name={"Subscribe"}
                         />
                     </form>
@@ -20,4 +20,4 @@ const Newsleter = () => {
     )
 }
 
-export default Newsleter
+export default Newsletter

@@ -16,7 +16,7 @@ import Awards from '../components/Awards';
 import BlogCard from '../components/BlogCard';
 import ContactForm from '../components/ContactForm';
 import BannerContact from '../components/BannerContact';
-import Newsleter from '../components/Newsleter';
+import Newsletter from '../components/Newsletter';
 import Footer from '../containers/Footer';
 
 //img 
@@ -25,7 +25,7 @@ import blockImg from '../assets/img/block.png';
 
 // icons
 import ShapeIcon from '../assets/img/icon/Shape.svg';
-import AccesibilityIcon from '../assets/img/icon/Accesibility.svg';
+import AccessibilityIcon from '../assets/img/icon/Accessibility.svg';
 import DesignIcon from '../assets/img/icon/Design.svg';
 import DevelopIcon from '../assets/img/icon/Develop.svg';
 import SettingIcon from '../assets/img/icon/Settings.svg';
@@ -97,7 +97,7 @@ const Webflow = () => {
 
                         buttonData={[
                             { id: 1, type: "primaryOrange", name: "Explore Work" },
-                            { id: 2, type: "secundaryEmty", name: "Contact Me" }
+                            { id: 2, type: "secondaryEmpty", name: "Contact Me" }
                         ]}
                     />
                 </div>
@@ -109,7 +109,7 @@ const Webflow = () => {
                     <div className="features-second-flex">
                         <div className="features-second__item">
                             <div className="features-second__content">
-                                <h4 className="h4-suptitle">Features</h4>
+                                <h4 className="h4-subtitle">Features</h4>
                                 <h3 className='h3-title'>Making Digital Products</h3>
                                 <a href="#" className="link">Read More</a>
                             </div>
@@ -126,7 +126,7 @@ const Webflow = () => {
                                 </div>
                                 <div className="card-sv__item card-sv__item--min">
                                     <CardContentSimple
-                                        imgPath={AccesibilityIcon}
+                                        imgPath={AccessibilityIcon}
                                         title="Accessibility"
                                         paragraph="Business understanding, ability to put themselves."
                                         btn={false}
@@ -145,13 +145,13 @@ const Webflow = () => {
                     supParagraph="Provides a full service range"
                     paragraph="Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team."
                     imgPath={aboutPic}
-                    colorBgClass="headre__section--PapayaWhip"
+                    colorBgClass="header__section--PapayaWhip"
                     rowReverse="row-reverse"
                     starDecor={false}
                     positionClass='staticWrapper'
 
                     buttonData={[
-                        { id: 1, type: "DarckPurpure", name: "About Webflow" }
+                        { id: 1, type: "darkPurpure", name: "About Webflow" }
                     ]}
                 />
             </section>
@@ -159,7 +159,7 @@ const Webflow = () => {
             <section className="section service-second-section section--dark section--minHeight60">
                 <div className="container">
                     <div className="header__content">
-                        <h4 className="h4-suptitle">Service</h4>
+                        <h4 className="h4-subtitle">Service</h4>
                         <h3 className="h3-title">How Our Agency <br /> Can Help</h3>
                     </div>
                     <div className="wrapper-card item--size33">
@@ -247,7 +247,7 @@ const Webflow = () => {
                     </div>
                     <div className="center-content">
                         <Button
-                            type="standart"
+                            type="standard"
                             name="Explore More"
                         />
                     </div>
@@ -259,7 +259,7 @@ const Webflow = () => {
                     <div className="contact-card__wrapper">
                         <img src={starGift} alt="Decor" className="contact-card__decor" />
                         <div className="contact-card__info">
-                            <h5 className="contact-card__suptitle">Get Started</h5>
+                            <h5 className="contact-card__subtitle">Get Started</h5>
                             <h4 className="contact-card__title">We Help Companies Move Faster</h4>
                             <div className="contact-card__btn">
                                 <Button
@@ -269,7 +269,7 @@ const Webflow = () => {
                             </div>
                         </div>
                         <div className="contact-card__info center-content">
-                            <p className="standart--paragraph">Put themselves in the merchant's shoes. It is meant to partner on the long run.</p>
+                            <p className="standard--paragraph">Put themselves in the merchant's shoes. It is meant to partner on the long run.</p>
                         </div>
                         <div className="contact-card__info">
                             <img src={blockImg} alt="Card" className="contact-card__center-img" />
@@ -285,13 +285,13 @@ const Webflow = () => {
                     supParagraph="Provides a full service range"
                     paragraph="Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team."
                     imgPath={about}
-                    colorBgClass="headre__section--PapayaWhip"
+                    colorBgClass="header__section--PapayaWhip"
                     rowReverse="row-reverse"
                     starDecor={false}
                     positionClass='staticWrapper'
 
                     buttonData={[
-                        { id: 1, type: "DarckPurpure", name: "About" }
+                        { id: 1, type: "darkPurpure", name: "About" }
                     ]}
                 />
             </section>
@@ -299,7 +299,7 @@ const Webflow = () => {
             <section className="section testimonials-section section--dark">
                 <div className="container">
                     <div className="head-work">
-                        <h4 className="h4-suptitle">Testimonials</h4>
+                        <h4 className="h4-subtitle">Testimonials</h4>
                         <h2 className="h2-title --mb35">What Our <br /> Clients Saying </h2>
                     </div>
                     <div className="testimonials__wrapper">
@@ -342,17 +342,19 @@ const Webflow = () => {
                     </div>
                     <div className="center-content">
                         <Button
-                            type={"secundaryTransparent"}
+                            type={"secondaryTransparent"}
                             name="See All"
                         />
                     </div>
                 </div>
             </section>
+            
             <section className="section-empty-light"></section>
+
             <section className="section pricing-section--webflow">
                 <div className="container">
                     <div className="head-info">
-                        <h4 className="h4-suptitle">Pricing</h4>
+                        <h4 className="h4-subtitle">Pricing</h4>
                         <h2 className="h2-title ">Explore <br /> Pricing Plans</h2>
                     </div>
                     <div className="pricing__wrapper">
@@ -360,14 +362,14 @@ const Webflow = () => {
                             pricesData={[
                                 {
                                     id: 1,
-                                    supTitle: "Consultation",
+                                    subtitle: "Consultation",
                                     price: "Free",
                                     describe: "Your digital marketing efforts, instead of handling in-house.",
                                     active: [true, false, false], type: "normal"
                                 },
                                 {
                                     id: 2,
-                                    supTitle: "Design",
+                                    subtitle: "Design",
                                     price: "$1500",
                                     describe: "Provide your business with a variety of digital solutions to promote.",
                                     active: [true, true, false],
@@ -375,7 +377,7 @@ const Webflow = () => {
                                 },
                                 {
                                     id: 3,
-                                    supTitle: "Design+Code",
+                                    subtitle: "Design+Code",
                                     price: "$2900",
                                     describe: "Help you hit your marketing goals and grow your business.",
                                     active: [true, true, true],
@@ -392,7 +394,7 @@ const Webflow = () => {
                     <div className="questions__box">
                         <div className="questions__half-box">
                             <div className="howWork__item">
-                                <h4 className="h4-suptitle">Faq</h4>
+                                <h4 className="h4-subtitle">Faq</h4>
                                 <h3 className="h3-title">Frequently Asked Questions</h3>
                                 <p className="header__paragraph" >A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
                                 <a href="#" className="link">Contact Us</a>
@@ -400,7 +402,7 @@ const Webflow = () => {
                         </div>
                         <div className="questions__half-box">
                             <Accordion
-                                type="standart"
+                                type="standard"
                                 accordionData={[
                                     {
                                         id: 1,
@@ -477,13 +479,13 @@ const Webflow = () => {
                     <div className="questions__box blog__box">
                         <div className="questions__half-box">
                             <div className="howWork__item">
-                                <h4 className="h4-suptitle">Our Blog</h4>
+                                <h4 className="h4-subtitle">Our Blog</h4>
                                 <h3 className="h3-title">Latest Blog <br /> Articles</h3>
                             </div>
                         </div>
                         <div className="questions__half-box">
                             <Button
-                                type={"secundaryTransparent"}
+                                type={"primaryWhite"}
                                 name={"Discover All"}
                             />
                         </div>
@@ -522,7 +524,7 @@ const Webflow = () => {
             <section className="section newsletter__section--webfolow section--dark">
                 <div className="container">
                     <div className="line"></div>
-                    <Newsleter />
+                    <Newsletter btnType={"primaryWhite"}/>
                     <div className="line"></div>
                 </div>
             </section>
@@ -534,7 +536,7 @@ const Webflow = () => {
                             <ContactForm />
                         </div>
                         <div className="contact__section-col">
-                            <h4 className="h4-suptitle">Contact</h4>
+                            <h4 className="h4-subtitle">Contact</h4>
                             <h2 className="h2-title">Contact Me</h2>
                             <p className="feature__paragraph">A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
                             <div className="features__todo">

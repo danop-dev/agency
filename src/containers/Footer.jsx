@@ -22,10 +22,10 @@ const Footer = ({type, name}) => {
                         <div className="footer__col">
                             <div className="name-li">Menu</div>
                             <ul className="footer__list">
-                                <li className="footer__li-item"><a href="#" className="footer__link">About</a></li>
-                                <li className="footer__li-item"><a href="#" className="footer__link">Services</a></li>
-                                <li className="footer__li-item"><a href="#" className="footer__link">Blog</a></li>
-                                <li className="footer__li-item"><a href="#" className="footer__link">Contact</a></li>
+                                <li className="footer__li-item"><a href="/about" className="footer__link">About</a></li>
+                                <li className="footer__li-item"><a href="/services" className="footer__link">Services</a></li>
+                                <li className="footer__li-item"><a href="/blog" className="footer__link">Blog</a></li>
+                                <li className="footer__li-item"><a href="/contact" className="footer__link">Contact</a></li>
                             </ul>
                         </div>
                         <div className="footer__col">

@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 
 import NavBar from '../components/Navbar';
-import Fooetr from '../containers/Footer';
+import Footer from '../containers/Footer';
 import HeadMin from '../containers/HeadMin';
 import Accordion from '../components/Accordion';
 import HowWork from '../components/HowWork';
@@ -23,7 +23,7 @@ const ServicesPage = () => {
         <div className="container">
           <div className="header__content">
             <div className="header__content-item">
-              <h4 className="h4-suptitle">Services</h4>
+              <h4 className="h4-subtitle">Services</h4>
               <h3 className="h3-title">Digital agency is a business you hire to outsource your digital marketing efforts</h3>
             </div>
             <div className="header__content-item">
@@ -88,7 +88,7 @@ const ServicesPage = () => {
         </div>
       </section>
 
-      <Fooetr name={"Agency"}/>
+      <Footer name={"Agency"}/>
     
     </Fragment>
   );

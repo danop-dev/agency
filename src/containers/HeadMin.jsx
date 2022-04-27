@@ -3,11 +3,11 @@ import React, {Fragment} from 'react'
 const HeadMin = ({name, paragraph}) => {
     return (
         <Fragment>
-            <section className="headre-min section--dark">
+            <section className="header-min section--dark">
                 <div className="container">
-                    <div className="headre-min__wrapper">
-                        <h2 className="headre-min__title">{name}</h2>
-                        <div className="headre-min__paragraph">{paragraph}</div>
+                    <div className="header-min__wrapper">
+                        <h2 className="header-min__title">{name}</h2>
+                        <div className="header-min__paragraph">{paragraph}</div>
                     </div>
                 </div>
             </section>

@@ -21,8 +21,9 @@ const Navbar = ({name}) => {
             </li>
             <li className="nav__section-item">
               <Button 
-                type="standart" 
+                type="standard" 
                 name="Contact" 
+                link={"/contact"}
               />
             </li>
           </ul>

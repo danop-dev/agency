@@ -18,12 +18,12 @@ import gallery4 from '../assets/img/personalPage/gallery/4.jpg';
 
 // icons
 import ShapeIcon from '../assets/img/icon/Shape.svg';
-import AccesibilityIcon from '../assets/img/icon/Accesibility.svg';
+import AccessibilityIcon from '../assets/img/icon/Accessibility.svg';
 
 //team img
 import designer from '../assets/img/team/Designer.png';
 import reactDev from '../assets/img/team/ReactDev.png';
-import ilustrator from '../assets/img/team/Ilustrator.png';
+import illustrator from '../assets/img/team/Illustrator.png';
 import productDes from '../assets/img/team/ProductDesigner.png';
 
 //testimonial img
@@ -48,7 +48,7 @@ const AboutPage = () => {
         <div className="container">
           <div className="about__wrapper d-flex">
             <div className="howWork__item">
-              <h4 className="h4-suptitle">About</h4>
+              <h4 className="h4-subtitle">About</h4>
               <h3 className="h3-title">An Experience <br /> Design Agency</h3>
             </div>
             <div className="howWork__item">
@@ -93,7 +93,7 @@ const AboutPage = () => {
           <div className="features-second-flex">
             <div className="features-second__item">
               <div className="features-second__content">
-                <h4 className="h4-suptitle">Features</h4>
+                <h4 className="h4-subtitle">Features</h4>
                 <p className="feature__paragraph">Long run, and work as an extension of the merchant's team.</p>
                 <p className="header__paragraph">Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension.</p>
               </div>
@@ -110,7 +110,7 @@ const AboutPage = () => {
                 </div>
                 <div className="card-sv__item card-sv__item--min">
                   <CardContentSimple
-                    imgPath={AccesibilityIcon}
+                    imgPath={AccessibilityIcon}
                     title="Accessibility"
                     paragraph="Business understanding, ability to put themselves."
                     btn={false}
@@ -145,7 +145,7 @@ const AboutPage = () => {
         <div className="container">
 
           <div className="head-info">
-            <h4 className="h4-suptitle">Our Team</h4>
+            <h4 className="h4-subtitle">Our Team</h4>
             <h2 className="h2-title --white">Team of Designers <br /> and Developers</h2>
           </div>
           <CarouselTeam
@@ -153,12 +153,12 @@ const AboutPage = () => {
               [
                 { id: 1, img: designer, name: "Azah Anyeni", pos: "Designer" },
                 { id: 2, img: reactDev, name: "Roelof Bekkenenks", pos: "React Developer" },
-                { id: 3, img: ilustrator, name: "Leonardo Oliveira", pos: "Illustrator" },
+                { id: 3, img: illustrator, name: "Leonardo Oliveira", pos: "Illustrator" },
                 { id: 4, img: productDes, name: "Izabella Tabakova", pos: "Product Designer" },
 
                 { id: 5, img: designer, name: "Azah Anyeni", pos: "Designer" },
                 { id: 6, img: reactDev, name: "Roelof Bekkenenks", pos: "React Developer" },
-                { id: 7, img: ilustrator, name: "Leonardo Oliveira", pos: "Illustrator" },
+                { id: 7, img: illustrator, name: "Leonardo Oliveira", pos: "Illustrator" },
                 { id: 8, img: productDes, name: "Izabella Tabakova", pos: "Product Designer" }
               ]}
           />
@@ -167,7 +167,7 @@ const AboutPage = () => {
 
       <section className="section testimonials-section section--dark">
         <div className="head-work">
-          <h4 className="h4-suptitle">Testimonials</h4>
+          <h4 className="h4-subtitle">Testimonials</h4>
           <h2 className="h2-title --mb35">What Our <br /> Clients Saying </h2>
         </div>
         <div className="testimonials__wrapper testimonials__wrapper--personal testimonials--carousel"> 
@@ -255,7 +255,7 @@ const AboutPage = () => {
           <div className="questions__box">
             <div className="questions__full-box">
               <div className="howWork__item">
-                <h4 className="h4-suptitle">Faq</h4>
+                <h4 className="h4-subtitle">Faq</h4>
                 <h3 className="h3-title">Frequently Asked Questions</h3>
                 <p className="header__paragraph" >A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
 
@@ -263,7 +263,7 @@ const AboutPage = () => {
             </div>
             <div className="questions__full-box">
               <Accordion
-                type="standart"
+                type="standard"
                 accordionData={[
                   {
                     id: 1,

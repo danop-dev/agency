@@ -9,7 +9,7 @@ const WorkCard = ({
         <Fragment>
             <a href="#" className="work__card-item"  style={{ backgroundImage: `url(${imgPath})` }}>
                 <div className="card-info">
-                    <span className="card-info__suptitle">{subtitle}</span>
+                    <span className="card-info__subtitle">{subtitle}</span>
                     <div className="card-info__title">{title}</div>
                 </div>
             </a>

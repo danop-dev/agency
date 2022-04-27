@@ -16,7 +16,6 @@ import workImg4 from '../assets/img/work/4.jpg';
 //banner img
 import bannerContactImg from '../assets/img/pic-banner.png';
 
-
 const PortfolioPage = () => {
 
   const dataWork = [
@@ -67,6 +66,7 @@ const PortfolioPage = () => {
           </div>
         </div>
       </section>
+
       <section className="section ">
         <div className="container">
           <BannerContact
@@ -76,9 +76,9 @@ const PortfolioPage = () => {
           />
         </div>
       </section>
+
       <Footer name={"Agency"} />
     </Fragment>
-
   );
 };
 

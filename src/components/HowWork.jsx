@@ -6,7 +6,7 @@ const HowWork = () => {
             <div className="howWork__wrapper">
                 <div className="howWork__item">
                     <div className="header__content">             
-                        <h4 className="h4-suptitle">How we work</h4>
+                        <h4 className="h4-subtitle">How we work</h4>
                         <h3 className="h3-title">Making Your Projects Look Awesome</h3>
                         <p className="header__paragraph" >Technical skills, design, businessunderstanding, ability to put themselves in the merchant's shoes.</p>
 

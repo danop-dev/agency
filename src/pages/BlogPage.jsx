@@ -6,7 +6,7 @@ import HeadMin from '../containers/HeadMin';
 import BannerContact from '../components/BannerContact';
 import BlogCard from '../components/BlogCard';
 import Button from '../components/Button';
-import Newsleter from '../components/Newsleter';
+import Newsletter from '../components/Newsletter';
 
 //img
 import bannerContactImg from '../assets/img/pic-banner.png';
@@ -118,7 +118,7 @@ const BlogPage = () => {
       <section className="section newsletter__blog-section">
         <div className="container">
           <div className="line"></div>
-          <Newsleter />
+          <Newsletter btnType={"primaryWhite"}/>
           <div className="line"></div>
         </div>
       </section>

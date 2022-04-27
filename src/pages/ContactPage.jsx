@@ -21,20 +21,20 @@ const ContactPage = () => {
         </div>
       </section>
 
-      <section className="section contcat-our-info__section">
+      <section className="section contact-our-info__section">
         <div className="container">
-          <div className="contcat-our-info__wrapper">
-            <div className="contcat-our-info__item">
-              <div className="contcat-our-info__header">Phone</div>
-              <div className="contcat-our-info__text">+1 (234) 567-89-00</div>
+          <div className="contact-our-info__wrapper">
+            <div className="contact-our-info__item">
+              <div className="contact-our-info__header">Phone</div>
+              <div className="contact-our-info__text">+1 (234) 567-89-00</div>
             </div>
-            <div className="contcat-our-info__item">
-              <div className="contcat-our-info__header">EMail</div>
-              <div className="contcat-our-info__text">info@agency.com</div>
+            <div className="contact-our-info__item">
+              <div className="contact-our-info__header">EMail</div>
+              <div className="contact-our-info__text">info@agency.com</div>
             </div>
-            <div className="contcat-our-info__item">
-              <div className="contcat-our-info__header">Address</div>
-              <div className="contcat-our-info__text">2247 Lunetta Street, TX 76301</div>
+            <div className="contact-our-info__item">
+              <div className="contact-our-info__header">Address</div>
+              <div className="contact-our-info__text">2247 Lunetta Street, TX 76301</div>
             </div>
           </div>
         </div>
@@ -45,7 +45,7 @@ const ContactPage = () => {
           <div className="questions__box">
             <div className="questions__half-box">
               <div className="howWork__item">
-                <h4 className="h4-suptitle">Faq</h4>
+                <h4 className="h4-subtitle">Faq</h4>
                 <h3 className="h3-title">Frequently Asked Questions</h3>
                 <p className="header__paragraph" >A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
                 <a href="#" className="link">Contact Us</a>
@@ -53,7 +53,7 @@ const ContactPage = () => {
             </div>
             <div className="questions__half-box">
               <Accordion
-                type="standart"
+                type="standard"
                 accordionData={[
                   {
                     id: 1,

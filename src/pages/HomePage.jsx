@@ -3,7 +3,6 @@ import React, { Fragment } from 'react';
 import NavBar from '../components/Navbar';
 import Header from '../containers/Header';
 import Partner from '../components/Partner';
-// import Review from '../components/Review';
 import HowWork from '../components/HowWork';
 import VideoPreview from '../components/VideoPreview';
 import Features from '../components/Features';
@@ -20,7 +19,7 @@ import Awards from '../components/Awards';
 import BlogCard from '../components/BlogCard';
 import ContactForm from '../components/ContactForm';
 import BannerContact from '../components/BannerContact';
-import Newsleter from '../components/Newsleter';
+import Newsletter from '../components/Newsletter';
 import Footer from '../containers/Footer';
 
 // +++ Img imports +++
@@ -34,7 +33,7 @@ import founderIng from '../assets/img/founder.png';
 
 // icons
 import ShapeIcon from '../assets/img/icon/Shape.svg';
-import AccesibilityIcon from '../assets/img/icon/Accesibility.svg';
+import AccessibilityIcon from '../assets/img/icon/Accessibility.svg';
 import DesignIcon from '../assets/img/icon/Design.svg';
 import DevelopIcon from '../assets/img/icon/Develop.svg';
 import SettingIcon from '../assets/img/icon/Settings.svg';
@@ -51,7 +50,7 @@ import starGift from '../assets/img/gift-star.svg';
 //team img
 import designer from '../assets/img/team/Designer.png';
 import reactDev from '../assets/img/team/ReactDev.png';
-import ilustrator from '../assets/img/team/Ilustrator.png';
+import illustrator from '../assets/img/team/Illustrator.png';
 import productDes from '../assets/img/team/ProductDesigner.png';
 
 //testimonial img
@@ -97,7 +96,8 @@ const HomePage = () => {
             reviewColor="#fff"
 
             buttonData={[
-              { id: 1, type: "primaryOrange", name: "About Us" }
+              { id: 1, type: "primaryOrange", name: "About Us" },
+              { id: 2, type: "secondaryEmpty", name: "Contact Us" }
             ]}
           />
         </div>
@@ -119,13 +119,13 @@ const HomePage = () => {
           supParagraph="Provides a full service range"
           paragraph="Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team."
           imgPath={aboutPic}
-          colorBgClass="headre__section--PapayaWhip"
+          colorBgClass="header__section--PapayaWhip"
           rowReverse="row-reverse"
           starDecor={false}
           positionClass='staticWrapper'
 
           buttonData={[
-            { id: 1, type: "primaryOrange", name: "About Us" }
+            { id: 1, type: "primaryWhite", name: "About Us" }
           ]}
         />
       </section>
@@ -174,7 +174,7 @@ const HomePage = () => {
           <div className="features-second-flex">
             <div className="features-second__item">
               <div className="features-second__content">
-                <h4 className="h4-suptitle">Features</h4>
+                <h4 className="h4-subtitle">Features</h4>
                 <p className="feature__paragraph">Long run, and work as an extension of the merchant's team.</p>
                 <a href="#" className="link">Read More</a>
               </div>
@@ -191,7 +191,7 @@ const HomePage = () => {
                 </div>
                 <div className="card-sv__item card-sv__item--active">
                   <CardContentSimple
-                    imgPath={AccesibilityIcon}
+                    imgPath={AccessibilityIcon}
                     title="Accessibility"
                     paragraph="Business understanding, ability to put themselves."
                     btn={false}
@@ -209,14 +209,14 @@ const HomePage = () => {
           title="Making Complex Digital Products"
           supParagraph="Agency provides a full service range including technical skills, design, business."
           imgPath={picSer}
-          colorBgClass="headre__section--PapayaWhip"
+          colorBgClass="header__section--PapayaWhip"
           rowReverse="row-reverse"
           starDecor={false}
           positionClass='staticWrapper'
           review_in={true}
 
           buttonData={[
-            { id: 1, type: "primaryOrange", name: "About Us" }
+            { id: 1, type: "primaryWhite", name: "About Us" }
           ]}
         />
       </section>
@@ -224,7 +224,7 @@ const HomePage = () => {
       <section className="section service-second-section">
         <div className="container">
           <div className="header__content">
-            <h4 className="h4-suptitle">Service</h4>
+            <h4 className="h4-subtitle">Service</h4>
             <h3 className="h3-title">How Our Agency <br /> Can Help</h3>
           </div>
           <div className="wrapper-card item--size33">
@@ -291,7 +291,7 @@ const HomePage = () => {
             </div>
             <div className="center-content">
               <Button
-                type="standart"
+                type="standard"
                 name="Explore More"
               />
             </div>
@@ -304,7 +304,7 @@ const HomePage = () => {
           <div className="contact-card__wrapper">
             <img src={starGift} alt="Decor" className="contact-card__decor" />
             <div className="contact-card__info">
-              <h5 className="contact-card__suptitle">Get Started</h5>
+              <h5 className="contact-card__subtitle">Get Started</h5>
               <h4 className="contact-card__title">We Help Companies Move Faster</h4>
               <div className="contact-card__btn">
                 <Button
@@ -325,7 +325,7 @@ const HomePage = () => {
       <section className="section events-card__section section--dark">
         <div className="container">
           <div className="head-work">
-            <h4 className="h4-suptitle">Events</h4>
+            <h4 className="h4-subtitle">Events</h4>
             <h2 className="h2-title --mb35 --white">Explore Future <br /> Conferences</h2>
           </div>
           <div className="events__items-box d-flex --j-cont-space-around">
@@ -365,7 +365,7 @@ const HomePage = () => {
           </div>
           <div className="center-content">
             <Button
-              type="standart"
+              type="standard"
               name="Explore More"
             />
           </div>
@@ -376,7 +376,7 @@ const HomePage = () => {
         <div className="container">
 
           <div className="head-info">
-            <h4 className="h4-suptitle">Our Team</h4>
+            <h4 className="h4-subtitle">Our Team</h4>
             <h2 className="h2-title --white">Team of Designers <br /> and Developers</h2>
           </div>
           <CarouselTeam
@@ -384,12 +384,12 @@ const HomePage = () => {
               [
                 { id: 1, img: designer, name: "Azah Anyeni", pos: "Designer" },
                 { id: 2, img: reactDev, name: "Roelof Bekkenenks", pos: "React Developer" },
-                { id: 3, img: ilustrator, name: "Leonardo Oliveira", pos: "Illustrator" },
+                { id: 3, img: illustrator, name: "Leonardo Oliveira", pos: "Illustrator" },
                 { id: 4, img: productDes, name: "Izabella Tabakova", pos: "Product Designer" },
 
                 { id: 5, img: designer, name: "Azah Anyeni", pos: "Designer" },
                 { id: 6, img: reactDev, name: "Roelof Bekkenenks", pos: "React Developer" },
-                { id: 7, img: ilustrator, name: "Leonardo Oliveira", pos: "Illustrator" },
+                { id: 7, img: illustrator, name: "Leonardo Oliveira", pos: "Illustrator" },
                 { id: 8, img: productDes, name: "Izabella Tabakova", pos: "Product Designer" }
               ]}
           />
@@ -402,12 +402,12 @@ const HomePage = () => {
             <div className="founder-words__item">
               <img className="founder-words-img" src={founderIng} alt="" />
             </div>
-            <div className="founder-words__item founder-words__item--pading70">
-              <h5 className="h4-suptitle">Founder Words</h5>
+            <div className="founder-words__item founder-words__item--padding70">
+              <h5 className="h4-subtitle">Founder Words</h5>
               <div className="founder-words__title">Digital agency is a business you hire to outsource your digital marketing efforts</div>
-              <div className="founde__data">
-                <div className="founde-name">Ren Delan</div>
-                <div className="founde-position">Founder</div>
+              <div className="founder__data">
+                <div className="founder-name">Ren Delan</div>
+                <div className="founder-position">Founder</div>
               </div>
             </div>
           </div>
@@ -417,10 +417,10 @@ const HomePage = () => {
       <section className="section testimonials-section">
         <div className="container">
           <div className="head-work">
-            <h4 className="h4-suptitle">Testimonials</h4>
+            <h4 className="h4-subtitle">Testimonials</h4>
             <h2 className="h2-title --mb35">What Our <br /> Clients Saying </h2>
           </div>
-          <div className="testimonials__wrapper">
+          <div className="testimonials__wrapper testimonials--transparentCard">
             <TestimonialsCard
               testimonialsData={[
                 {
@@ -460,7 +460,7 @@ const HomePage = () => {
           </div>
           <div className="center-content">
             <Button
-              type={"secundaryTransparent"}
+              type={"secondaryTransparent"}
               name="See All"
             />
           </div>
@@ -470,7 +470,7 @@ const HomePage = () => {
       <section className="section pricing-section">
         <div className="container">
           <div className="head-info">
-            <h4 className="h4-suptitle">Pricing</h4>
+            <h4 className="h4-subtitle">Pricing</h4>
             <h2 className="h2-title ">Check Our <br /> Pricing Plans</h2>
           </div>
           <div className="pricing__wrapper">
@@ -478,14 +478,14 @@ const HomePage = () => {
               pricesData={[
                 {
                   id: 1,
-                  supTitle: "Consultation",
+                  subtitle: "Consultation",
                   price: "Free",
                   describe: "Your digital marketing efforts, instead of handling in-house.",
                   active: [true, false, false], type: "normal"
                 },
                 {
                   id: 2,
-                  supTitle: "Design",
+                  subtitle: "Design",
                   price: "$1500",
                   describe: "Provide your business with a variety of digital solutions to promote.",
                   active: [true, true, false],
@@ -493,7 +493,7 @@ const HomePage = () => {
                 },
                 {
                   id: 3,
-                  supTitle: "Design+Code",
+                  subtitle: "Design+Code",
                   price: "$2900",
                   describe: "Help you hit your marketing goals and grow your business.",
                   active: [true, true, true],
@@ -510,7 +510,7 @@ const HomePage = () => {
           <div className="questions__box">
             <div className="questions__half-box">
               <div className="howWork__item">
-                <h4 className="h4-suptitle">Faq</h4>
+                <h4 className="h4-subtitle">Faq</h4>
                 <h3 className="h3-title">Frequently Asked Questions</h3>
                 <p className="header__paragraph" >A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
                 <a href="#" className="link">Contact Us</a>
@@ -518,7 +518,7 @@ const HomePage = () => {
             </div>
             <div className="questions__half-box">
               <Accordion
-                type="standart"
+                type="standard"
                 accordionData={[
                   {
                     id: 1,
@@ -588,13 +588,13 @@ const HomePage = () => {
           <div className="questions__box blog__box">
             <div className="questions__half-box">
               <div className="howWork__item">
-                <h4 className="h4-suptitle">Our Blog</h4>
+                <h4 className="h4-subtitle">Our Blog</h4>
                 <h3 className="h3-title">Latest Blog <br /> Articles</h3>
               </div>
             </div>
             <div className="questions__half-box">
               <Button
-                type={"secundaryTransparent"}
+                type={"secondaryTransparent"}
                 name={"Discover All"}
               />
             </div>
@@ -633,7 +633,7 @@ const HomePage = () => {
       <section className="section newsletter__section">
         <div className="container">
           <div className="line"></div>
-          <Newsleter />
+          <Newsletter btnType={"secondaryTransparent"} />
         </div>
       </section>
 
@@ -643,20 +643,20 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="section contcat-our-info__section">
+      <section className="section contact-our-info__section">
         <div className="container">
-          <div className="contcat-our-info__wrapper">
-            <div className="contcat-our-info__item">
-              <div className="contcat-our-info__header">Phone</div>
-              <div className="contcat-our-info__text">+1 (234) 567-89-00</div>
+          <div className="contact-our-info__wrapper">
+            <div className="contact-our-info__item">
+              <div className="contact-our-info__header">Phone</div>
+              <div className="contact-our-info__text">+1 (234) 567-89-00</div>
             </div>
-            <div className="contcat-our-info__item">
-              <div className="contcat-our-info__header">EMail</div>
-              <div className="contcat-our-info__text">info@agency.com</div>
+            <div className="contact-our-info__item">
+              <div className="contact-our-info__header">EMail</div>
+              <div className="contact-our-info__text">info@agency.com</div>
             </div>
-            <div className="contcat-our-info__item">
-              <div className="contcat-our-info__header">Address</div>
-              <div className="contcat-our-info__text">2247 Lunetta Street, TX 76301</div>
+            <div className="contact-our-info__item">
+              <div className="contact-our-info__header">Address</div>
+              <div className="contact-our-info__text">2247 Lunetta Street, TX 76301</div>
             </div>
           </div>
         </div>

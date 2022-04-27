@@ -11,7 +11,7 @@ const BannerContact = ({colorText, bannerContactImg, bgColor}) => {
                     <p className="header__paragraph" style={{ color: colorText }} >A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
                     <div className="header__btn-box">
                         <Button
-                            type="secundaryTransparent"
+                            type="secondaryTransparent"
                             name="Contact Us"
                         />
                     </div>

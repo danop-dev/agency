@@ -1,7 +1,5 @@
 import React, { Fragment } from 'react';
 import Rating from '@mui/material/Rating';
-import Stack from '@mui/material/Stack';
-
 import Review from './Review';
 
 const TestimonialsCard = ({testimonialsData}) => {

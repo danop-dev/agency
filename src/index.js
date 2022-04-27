@@ -8,7 +8,6 @@ import './assets/css/media.css';
 import './animation.js'
 
 
-
 ReactDOM.render(<App />, document.getElementById('root'));
 
 document.addEventListener("DOMContentLoaded", function () {

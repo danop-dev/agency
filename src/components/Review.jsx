@@ -1,8 +1,6 @@
 import React, { Fragment } from 'react';
 import Avatar from '@mui/material/Avatar';
 
-// import people from '../assets/img/people.png';
-
 const Review = ({ fontColor, img, name, pos, sizeImg }) => {
   
   return (

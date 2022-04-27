@@ -2,41 +2,49 @@ import React from 'react';
 
 const Button = ({
   type,
-  name
+  name,
+  link
 
 }) => {
 
-  let styleClass = `standarStyleBTN `;
+  let styleClass = `standardStyleBTN `;
+
+  function isEmpty(str) {
+    return (!str || str.length === 0);
+  }
 
   switch (type) {
 
-    case 'DarckPurpure':
-      styleClass += "darckPurpure--BTN";
+    case 'darkPurpure':
+      styleClass += "darkPurpure--BTN";
       break;
 
     case 'primaryOrange':
       styleClass += "primaryOrange--BTN";
       break;
 
-    case 'secundaryEmty':
-      styleClass += "secundaryEmty--BTN";
+    case 'secondaryEmpty':
+      styleClass += "secondaryEmpty--BTN";
       break;
-    
+
     case 'primaryWhite':
       styleClass += "primaryWhite--BTN";
       break;
-    
-    case 'secundaryTransparent':
-      styleClass += "secundaryTransparent--BTN";
+
+    case 'secondaryTransparent':
+      styleClass += "secondaryTransparent--BTN";
       break;
-        
+
     default:
 
       break;
   }
 
-
-  return ( <button className={styleClass}> {name} </button> )
+  return (
+    isEmpty(link) ? <button className={styleClass}> {name} </button>
+                  : <a href={link} className={styleClass}>{name}</a>
+  )
 }
+
 
 export default Button

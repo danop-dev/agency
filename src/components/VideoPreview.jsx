@@ -12,7 +12,7 @@ const VideoPreview = () => {
                 </div>
             </div>
             <div className="video__item">
-                <h4 className="h4-suptitle">Video Reel</h4>
+                <h4 className="h4-subtitle">Video Reel</h4>
                 <h3 className="h3-title">Unlock The Greatest Value Possible</h3>
                 <p className="header__paragraph" >Design, business understanding, ability to put themselves in the merchant's shoes meant to partner.</p>
 

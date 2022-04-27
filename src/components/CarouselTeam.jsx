@@ -5,14 +5,12 @@ const CarouselTeam = ({
 
 }) => {
 
-    let card = [];
     let i = 0;
 
     return (
         <Fragment>
             <div class="team__carousel">
                 {imgPeople.map(item => (
-                 
                     <div key={item.id} className="team__card">
                         <div className="team__card-img">
                             <img src={item.img} alt="Team member" key={i++}/>
@@ -21,13 +19,10 @@ const CarouselTeam = ({
                             <div className="team__card-name">{item.name}</div>
                             <div className="team__card-position">{item.pos}</div>
                         </div>
-                    </div>
-                   
+                    </div> 
                 ))}
             </div>
-
         </Fragment>
-
     )
 }
 

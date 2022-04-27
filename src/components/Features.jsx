@@ -11,8 +11,8 @@ const Features = ({type, img}) => {
   return (
     <Fragment>
         <div className="features__wrapper">
-            <div className="features__item --padingRight20">
-                <h4 className="h4-suptitle">Features</h4>
+            <div className="features__item --paddingRight20">
+                <h4 className="h4-subtitle">Features</h4>
                 <h2 style={{color: color}} className="h2-title">Give Your Site A New Look</h2>
                 <p style={{color: color}} className="feature__paragraph" >Service range including technical skills, design, business understanding.</p>
                 <div className="features__todo">

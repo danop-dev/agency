@@ -38,13 +38,12 @@ const Header = ({
                             <div className="header__content">
 
                                 {decorationDisplay(starDecor)}
-                                <h4 className="h4-suptitle">{subtitle}</h4>
+                                <h4 className="h4-subtitle">{subtitle}</h4>
                                 <h1 className="h1-title" style={{ color: colorText }} >{title}</h1>
                                 <span className="sup-paragraph" style={{ color: colorText }} >{supParagraph}</span>
                                 <p className="header__paragraph" style={{ color: colorText }} >{paragraph}</p>
 
                                 {review_in ? <Review img={people} /> : null}  {/* COLOR  DO FIX */}
-
 
                                 <div className="header__btn-box">
                                     {buttonData.map(item => (

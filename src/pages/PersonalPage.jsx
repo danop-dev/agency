@@ -10,7 +10,7 @@ import TestimonialsCard from '../components/TestimonialsCard';
 import Accordion from '../components/Accordion';
 import BlogCard from '../components/BlogCard';
 import ContactForm from '../components/ContactForm';
-import Newsleter from '../components/Newsleter';
+import Newsletter from '../components/Newsletter';
 import Footer from '../containers/Footer';
 
 //img 
@@ -80,7 +80,7 @@ const PersonalPage = () => {
             <section className="section services-pers__section">
                 <div className="container">
                     <div className="head-work">
-                        <h4 className="h4-suptitle">Service</h4>
+                        <h4 className="h4-subtitle">Service</h4>
                         <h2 className="h2-title">How I Can Help <br /> You With</h2>
                     </div>
                     <div className="services-pers__wrapper">
@@ -121,7 +121,7 @@ const PersonalPage = () => {
                     <div className="work-head--btn">
 
                         <div className="head-info">
-                            <h4 className="h4-suptitle">Our Team</h4>
+                            <h4 className="h4-subtitle">Our Team</h4>
                             <h2 className="h2-title --white">Team of Designers <br /> and Developers</h2>
                         </div>
                         <Button
@@ -157,7 +157,7 @@ const PersonalPage = () => {
                     supParagraph="Provides a full service range"
                     paragraph="Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team."
                     imgPath={aboutPic}
-                    colorBgClass="headre__section--PapayaWhip"
+                    colorBgClass="header__section--PapayaWhip"
                     rowReverse="row-reverse"
                     starDecor={false}
                     positionClass='staticWrapper'
@@ -170,21 +170,21 @@ const PersonalPage = () => {
 
             <section className="section statistics-info__section statistics-info__section--personal">
                 <div className="container">
-                    <div className="contcat-our-info__wrapper">
-                        <div className="contcat-our-info__item">
-                            <div className="contcat-our-info__header">
-                                <div className="contcat-our-info__header-info">
-                                    <div className="contcat-our-info__header-statistics">42%</div>
-                                    <div className="contcat-our-info__text">Years of experience</div>
+                    <div className="contact-our-info__wrapper">
+                        <div className="contact-our-info__item">
+                            <div className="contact-our-info__header">
+                                <div className="contact-our-info__header-info">
+                                    <div className="contact-our-info__header-statistics">42%</div>
+                                    <div className="contact-our-info__text">Years of experience</div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="contcat-our-info__item">
-                            <div className="contcat-our-info__header">
-                                <div className="contcat-our-info__header-info">
-                                    <div className="contcat-our-info__header-statistics">73+</div>
-                                    <div className="contcat-our-info__text">Projects Done</div>
+                        <div className="contact-our-info__item">
+                            <div className="contact-our-info__header">
+                                <div className="contact-our-info__header-info">
+                                    <div className="contact-our-info__header-statistics">73+</div>
+                                    <div className="contact-our-info__text">Projects Done</div>
                                 </div>
                             </div>
                         </div>
@@ -203,7 +203,7 @@ const PersonalPage = () => {
                     <div className="contact-card__wrapper">
                         <img src={starGift} alt="Decor" className="contact-card__decor" />
                         <div className="contact-card__info">
-                            <h5 className="contact-card__suptitle">Get Started</h5>
+                            <h5 className="contact-card__subtitle">Get Started</h5>
                             <h4 className="contact-card__title">We Help Companies Move Faster</h4>
                             <div className="contact-card__btn">
                                 <Button
@@ -213,7 +213,7 @@ const PersonalPage = () => {
                             </div>
                         </div>
                         <div className="contact-card__info center-content">
-                            <p className="standart--paragraph">Put themselves in the merchant's shoes. It is meant to partner on the long run.</p>
+                            <p className="standard--paragraph">Put themselves in the merchant's shoes. It is meant to partner on the long run.</p>
                         </div>
                         <div className="contact-card__info">
                             <img src={blockImg} alt="Card" className="contact-card__center-img" />
@@ -225,7 +225,7 @@ const PersonalPage = () => {
             <section className="section testimonials-section">
                 <div className="container">
                     <div className="head-work">
-                        <h4 className="h4-suptitle">Testimonials</h4>
+                        <h4 className="h4-subtitle">Testimonials</h4>
                         <h2 className="h2-title --mb35">What Our <br /> Clients Saying </h2>
                     </div>
                     <div className="testimonials__wrapper testimonials__wrapper--personal">
@@ -260,7 +260,7 @@ const PersonalPage = () => {
                     </div>
                     <div className="center-content">
                         <Button
-                            type={"secundaryTransparent"}
+                            type={"secondaryTransparent"}
                             name="See All"
                         />
                     </div>
@@ -272,7 +272,7 @@ const PersonalPage = () => {
                     <div className="questions__box">
                         <div className="questions__half-box">
                             <div className="howWork__item">
-                                <h4 className="h4-suptitle">Faq</h4>
+                                <h4 className="h4-subtitle">Faq</h4>
                                 <h3 className="h3-title">Frequently Asked Questions</h3>
                                 <p className="header__paragraph" >A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
                                 <a href="#" className="link --white">Contact Us</a>
@@ -280,7 +280,7 @@ const PersonalPage = () => {
                         </div>
                         <div className="questions__half-box">
                             <Accordion
-                                type="standart"
+                                type="standard"
                                 accordionData={[
                                     {
                                         id: 1,
@@ -320,13 +320,13 @@ const PersonalPage = () => {
                     <div className="questions__box blog__box">
                         <div className="questions__half-box">
                             <div className="howWork__item">
-                                <h4 className="h4-suptitle">Our Blog</h4>
+                                <h4 className="h4-subtitle">Our Blog</h4>
                                 <h3 className="h3-title">Latest Blog <br /> Articles</h3>
                             </div>
                         </div>
                         <div className="questions__half-box">
                             <Button
-                                type={"secundaryTransparent"}
+                                type={"primaryWhite"}
                                 name={"Discover All"}
                             />
                         </div>
@@ -363,10 +363,10 @@ const PersonalPage = () => {
                 </div>
             </section>
 
-            <section className="section newsletter__section newsletter__section--personal padingTopNull">
+            <section className="section newsletter__section newsletter__section--personal paddingTopNull">
                 <div className="container">
                     <div className="line"></div>
-                    <Newsleter />
+                    <Newsletter btnType={"primaryWhite"}/>
                 </div>
             </section>
 
@@ -377,7 +377,7 @@ const PersonalPage = () => {
                             <ContactForm />
                         </div>
                         <div className="contact__section-col">
-                            <h4 className="h4-suptitle">Contact</h4>
+                            <h4 className="h4-subtitle">Contact</h4>
                             <h2 className="h2-title">Contact Me</h2>
                             <p className="feature__paragraph">A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
                             <div className="features__todo">
@@ -399,7 +399,7 @@ const PersonalPage = () => {
                     title="Help To Build Your Dream Project"
                     paragraph="A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house."
                     imgPath={bannerContactImg}
-                    colorBgClass="headre__section--PapayaWhip"
+                    colorBgClass="header__section--PapayaWhip"
                     starDecor={false}
                     positionClass='staticWrapper'
                     buttonData={[
@@ -407,6 +407,7 @@ const PersonalPage = () => {
                     ]}
                 />
             </section>
+            
             <section className="section-gallery">
                 <div className="gallery__wrapper">
                     <div className="gallery__item">

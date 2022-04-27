@@ -9,7 +9,6 @@ import brand5 from '../assets/img/partners/Bitmap-4.png';
 
 
 const Partner = () => {
-
   return (
     <Fragment>
         <div className="partner-box">

@@ -14,7 +14,9 @@ import PostPage           from './pages/PostPage';
 import ContactPage        from './pages/ContactPage';
 
 const App = () => {
+  
   return (
+
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -31,7 +33,7 @@ const App = () => {
 
       </Routes>
     </BrowserRouter>
-
+    
   )
 };
 

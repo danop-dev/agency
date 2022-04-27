@@ -59,7 +59,7 @@
         line-height: 1.2;
     }
 
-    .h4-suptitle{
+    .h4-subtitle{
         font-size: 0.875rem;
     }
 
@@ -129,7 +129,7 @@
         height: 300px;
     }
 
-    .card-info__suptitle {
+    .card-info__subtitle {
         font-size: 0.875rem;
         line-height: 1rem;
     }
@@ -178,7 +178,7 @@
         width: 100%;
     }
 
-    .founder-words__item--pading70{
+    .founder-words__item--padding70{
         padding: 40px;
     }
 
@@ -252,29 +252,29 @@
         background-color: #fff;
     }
 
-    .contcat-our-info__wrapper{
+    .contact-our-info__wrapper{
         flex-wrap: wrap;
     }
 
-    .contcat-our-info__wrapper>.contcat-our-info__item{
+    .contact-our-info__wrapper>.contact-our-info__item{
         flex-wrap: wrap;
         padding: 20px 35px;
         width: 100%;
         text-align: center;
     }
 
-    .contcat-our-info__header{
+    .contact-our-info__header{
         justify-content: center;
     }
 
-    .contcat-our-info__item{
+    .contact-our-info__item{
         border-radius: 0px;
     }
-    .contcat-our-info__item:first-child{
+    .contact-our-info__item:first-child{
         border-radius: 6px 6px 0px 0px;
     }
     
-    .contcat-our-info__item:last-child{
+    .contact-our-info__item:last-child{
         border-radius: 0px 0px 6px 6px ;
     }
 
@@ -287,11 +287,11 @@
         width: 100%;
     }
 
-    .statistics-info__section--personal .contcat-our-info__header{
+    .statistics-info__section--personal .contact-our-info__header{
         display: flex;
         flex-direction: column;
     }
-    .statistics-info__section--personal .contcat-our-info__header::before{
+    .statistics-info__section--personal .contact-our-info__header::before{
         margin: 0 0 20px 0;
     }
 
@@ -600,7 +600,7 @@
         width: 100%;
     }
 
-    .statistics-info__section .contcat-our-info__item>.contcat-our-info__header::before {
+    .statistics-info__section .contact-our-info__item>.contact-our-info__header::before {
         transform: scale(0.8);
     }
 
@@ -669,7 +669,7 @@
         line-height: 1.2;
     }
 
-    .h4-suptitle {
+    .h4-subtitle {
         font-size: 0.75rem;
         margin-bottom: 20px;
     }
@@ -715,7 +715,7 @@
     .contact-card__decor{
         left: 10px;
     }
-    .dosts-carousel {
+    .dots-carousel {
         margin-top: 30px;
     }
     .testimonials-card__pers-info .review .css-zjb5mq-MuiAvatar-root{
@@ -748,11 +748,11 @@
         margin-bottom: 25px;
     }
 
-    .contcat-our-info__header{
+    .contact-our-info__header{
         transform: scale(0.8);
     }
 
-    .contcat-our-info__text {
+    .contact-our-info__text {
         font-size: 1rem;
         line-height: 1.5rem;
     }
@@ -807,7 +807,7 @@
         padding: 0 0 460px 0;
     }
 
-    .headre-min__title{
+    .header-min__title{
         font-size: 3rem;
     }
 
@@ -818,6 +818,7 @@
     .info-client-project .info-client__col{
         width: 100%;
     }
+    
     .info-client-project .info-client__col:first-child{
         margin-bottom: 44px;
     }

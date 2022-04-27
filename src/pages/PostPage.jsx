@@ -11,8 +11,6 @@ import Footer from '../containers/Footer';
 
 //img
 import projectImg from '../assets/img/work/1.jpg';
-
-//banner img
 import bannerContactImg from '../assets/img/pic-banner.png';
 
 //testimonial img
@@ -176,7 +174,6 @@ const PostPage = () => {
         </div>
       </section>
       <Footer name={"Agency"} />
-
 
     </Fragment>
   )
